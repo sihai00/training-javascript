@@ -1,7 +1,7 @@
 # w3cschool初级脚本算法
 
 | 标题 | 原文地址 | 解决地址 |
-|:---:|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|
 | 翻转字符串 | [原文](https://www.w3cschool.cn/codecamp/reverse-a-string.html) | [解决](https://github.com/sihai00/training-javascript/tree/master/w3cschool-easy/reverse-a-string.js) | 
 | 阶乘 | [原文](https://www.w3cschool.cn/codecamp/factorialize-a-number.html) | [解决](https://github.com/sihai00/training-javascript/tree/master/w3cschool-easy／factorialize-a-number.js) |
 | 回文 | [原文](https://www.w3cschool.cn/codecamp/check-for-palindromes.html) | [解决](https://github.com/sihai00/training-javascript/tree/master/w3cschool-easy／check-for-palindromes.js) |
