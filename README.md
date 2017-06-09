@@ -1,0 +1,2 @@
+# training-javascript
+日常闲逛或开发中所遇到的javascript有趣问题及解决方法
