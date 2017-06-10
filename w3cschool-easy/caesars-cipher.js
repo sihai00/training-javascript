@@ -11,7 +11,6 @@ function rot13(str) {
   return str.split('').map(v => {
     if (/\w/.test(v)) {
       var index = letter.findIndex(k => k === v) + 13
-      console.log(letter.findIndex(k => k === v), index)
       index = index >= 26 ? index - 26 : index
 
       return letter[index]
