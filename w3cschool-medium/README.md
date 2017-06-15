@@ -6,3 +6,4 @@
 | 找出数组间差异 | [原文](https://www.w3cschool.cn/codecamp/diff-two-arrays.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/diff-two-arrays.js) | 完成 |
 | 数字转罗马数字 | [原文](https://www.w3cschool.cn/codecamp/roman-numeral-converter.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/roman-numeral-converter.js) | 完成 |
 | 对象搜索 | [原文](https://www.w3cschool.cn/codecamp/where-art-thou.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/where-art-thou.js) | 完成 |
+| 查询替换 | [原文](https://www.w3cschool.cn/codecamp/search-and-replace.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/search-and-replace.js) | 完成 |
