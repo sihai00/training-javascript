@@ -1,7 +1,7 @@
 /*
 * 目标：查询替换
 * 解释：参数1:查找和替换的句子; 参数2:将被替换掉的单词; 参数3: 用于替换第二个参数
-* 例如：convert(2) 应该返回 "II"
+* 例如：myReplace("His name is Tom", "Tom", "john") 应该返回 "His name is John"
 * 
 * */
 
