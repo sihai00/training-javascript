@@ -7,3 +7,4 @@
 | 数字转罗马数字 | [原文](https://www.w3cschool.cn/codecamp/roman-numeral-converter.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/roman-numeral-converter.js) | 完成 |
 | 对象搜索 | [原文](https://www.w3cschool.cn/codecamp/where-art-thou.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/where-art-thou.js) | 完成 |
 | 查询替换 | [原文](https://www.w3cschool.cn/codecamp/search-and-replace.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/search-and-replace.js) | 完成 |
+| 字符串移动插入 | [原文](https://www.w3cschool.cn/codecamp/pig-latin.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/pig-latin.js) | 完成 |
