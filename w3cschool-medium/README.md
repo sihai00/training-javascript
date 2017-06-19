@@ -10,3 +10,4 @@
 | 字符串移动插入 | [原文](https://www.w3cschool.cn/codecamp/pig-latin.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/pig-latin.js) | 完成 |
 | 字符配对 | [原文](https://www.w3cschool.cn/codecamp/dna-pairing.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/dna-pairing.js) | 完成 |
 | 字符串查询补充 | [原文](https://www.w3cschool.cn/codecamp/missing-letters.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/missing-letters.js) | 完成 |
+| 输入检查 | [原文](https://www.w3cschool.cn/codecamp/boo-who.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/boo-who.js) | 完成 |
