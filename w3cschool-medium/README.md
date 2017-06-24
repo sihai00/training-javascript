@@ -15,3 +15,4 @@
 | html符号转实体 | [原文](https://www.w3cschool.cn/codecamp/convert-html-entities.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/convert-html-entities.js) | 完成 |
 | 字符串连接 | [原文](https://www.w3cschool.cn/codecamp/spinal-tap-case.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/spinal-tap-case.js) | 完成 |
 | 斐波纳契奇数求和 | [原文](https://www.w3cschool.cn/codecamp/sum-all-odd-fibonacci-numbers.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/sum-all-odd-fibonacci-numbers.js) | 完成 |
+| 质素求和 | [原文](https://www.w3cschool.cn/codecamp/sum-all-primes.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/sum-all-primes.js) | 完成 |
