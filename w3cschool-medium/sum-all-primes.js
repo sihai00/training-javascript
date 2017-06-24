@@ -8,15 +8,15 @@
 function sumPrimes(num) {
   if (typeof num !== 'number') return
   
-  return Array(num).join(',').split(',').map((v, i) => i).filter(v => {
-    if(v === 2 || v === 3 || v === 5 || v === 7){
-      return true
-    }else if(v === 1){
-      return false
-    }else{
-      return v % v === 0 && v % 2 !== 0 && v % 3 !== 0 && v % 5 !== 0 && v % 7 !== 0
-    }
-  }).reduce((pre, next) => pre + next)
+  var result = [2]
+  var max = 3
+  // 获取小于num的质数数组
+  while(max <= num){
+    result.every(v => max % v !== 0) && result.push(max)
+    max += 1
+  }
+  // 相加
+  return result.reduce((pre, next) => pre + next)
 }
 
 sumPrimes(10);
