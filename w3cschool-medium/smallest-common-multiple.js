@@ -6,16 +6,12 @@
 * */
 
 function maxCommons(arr) {
-  var result, max, min, mid
- 
-  min = arr[0]
-  max = arr[1]
+  var min = arr[0]
+  var max = arr[1]
 
   // 找出最大公约数
   while(max % min !== 0){
-    mid = max
-    max = min 
-    min = mid % min 
+    [max, min] = [min, max % min]
   }
 
   return min;
