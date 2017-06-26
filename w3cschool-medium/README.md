@@ -17,3 +17,4 @@
 | 斐波纳契奇数求和 | [原文](https://www.w3cschool.cn/codecamp/sum-all-odd-fibonacci-numbers.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/sum-all-odd-fibonacci-numbers.js) | 完成 |
 | 质素求和 | [原文](https://www.w3cschool.cn/codecamp/sum-all-primes.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/sum-all-primes.js) | 完成 |
 | 最小公倍数 | [原文](https://www.w3cschool.cn/codecamp/smallest-common-multiple.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/smallest-common-multiple.js) | 完成 |
+| 数组验证 | [原文](https://www.w3cschool.cn/codecamp/finders-keepers.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/finders-keepers.js) | 完成 |
