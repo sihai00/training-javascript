@@ -20,3 +20,4 @@
 | 数组验证 | [原文](https://www.w3cschool.cn/codecamp/finders-keepers.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/finders-keepers.js) | 完成 |
 | 数组取值 | [原文](https://www.w3cschool.cn/codecamp/drop-it.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/drop-it.js) | 完成 |
 | 数组简化 | [原文](https://www.w3cschool.cn/codecamp/steamroller.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/steamroller.js) | 完成 |
+| 二进制转字符 | [原文](https://www.w3cschool.cn/codecamp/binary-agents.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/binary-agents.js) | 完成 |
