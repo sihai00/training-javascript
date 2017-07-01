@@ -22,3 +22,4 @@
 | 数组简化 | [原文](https://www.w3cschool.cn/codecamp/steamroller.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/steamroller.js) | 完成 |
 | 二进制转字符 | [原文](https://www.w3cschool.cn/codecamp/binary-agents.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/binary-agents.js) | 完成 |
 | 数组元素判断 | [原文](https://www.w3cschool.cn/codecamp/everything-be-true.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/everything-be-true.js) | 完成 |
+| 函数迭代可选参数 | [原文](https://www.w3cschool.cn/codecamp/arguments-optional.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-medium/arguments-optional.js) | 完成 |
