@@ -6,3 +6,4 @@
 | 集合交集 | [原文](https://www.w3cschool.cn/codecamp/symmetric-difference.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-hard/symmetric-difference.js) | 完成 |
 | 收银系统 | [原文](https://www.w3cschool.cn/codecamp/exact-change.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-hard/exact-change.js) | 完成 |
 | 库存更新 | [原文](https://www.w3cschool.cn/codecamp/inventory-update.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-hard/inventory-update.js) | 完成 |
+| 排列组合去重 | [原文](https://www.w3cschool.cn/codecamp/no-repeats-please.html) | [解答](https://github.com/sihai00/training-javascript/tree/master/w3cschool-hard/no-repeats-please.js) | 完成 |
