@@ -16,7 +16,7 @@ function continueArr(str){
     var first = str[0]
     var end = str.substring(1)
     var result = []
-
+    // 把得到的全排列数组和前一个元素进行全排列
     continueArr(end).forEach(v => {
       var val = [...v]
       for(var i = 0; i <= v.length; i++){
