@@ -46,35 +46,6 @@ var Person = function(firstAndLast) {
   return firstAndLast;
 };
 
-var bob = new Person('Bob Ross');
-bob.getFullName();
-// Person.prototype.getFullName = function(){
-//   return this.fullName
-// }
-
-// Person.prototype.getFirstName = function(){
-//   return this.firstName
-// }
-
-// Person.prototype.getLastName = function(){
-//   return this.lastName
-// }
-
-// Person.prototype.setFirstName = function(str){
-//   if (typeof str !== 'string') return
-//   this.firstName = str
-//   return this.fullName
-// }
-
-// Person.prototype.setLastName = function(str){
-//   if (typeof str !== 'string') return
-//   this.lastName = str
-//   return this.fullName
-// }
-
-// Person.prototype.setFullName = function(str){
-//   if (typeof str !== 'string') return
-//   this.fullName = str
-//   return this.fullName
-// }
+var bob = new Person('Bob Ross')
+bob.getFullName()
 
