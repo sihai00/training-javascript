@@ -8,3 +8,4 @@
 | 4 | Median of Two Sorted Arrays | [原文](https://leetcode.com/problems/median-of-two-sorted-arrays/#/description) | [解答](./median-of-two-sorted-arrays.js) | hard |
 | 5 | Longest Palindromic Substring | [原文](https://leetcode.com/problems/longest-palindromic-substring/#/description) | [解答](./longest-palindromic-substring.js) | medium |
 | 6 | ZigZag Conversion | [原文](https://leetcode.com/problems/zigzag-conversion/#/description) | [解答](./zigzag-conversion.js) | medium |
+| 7 | Reverse Integer | [原文](https://leetcode.com/problems/reverse-integer/#/description) | [解答](./reverse-integer.js) | medium |
