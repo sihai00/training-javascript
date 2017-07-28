@@ -12,3 +12,4 @@
 | 9 | Palindrome Number | [原文](https://leetcode.com/problems/palindrome-number/#/description) | [解答](./9-palindrome-number.js) | easy |
 | 13 | Roman to Integer | [原文](https://leetcode.com/problems/roman-to-integer/#/description) | [解答](./13-roman-to-integer.js) | easy |
 | 14 | Longest Common Prefix | [原文](https://leetcode.com/problems/longest-common-prefix/tabs/description) | [解答](./14-longest-common-prefix.js) | easy |
+| 20 | Valid Parentheses | [原文](https://leetcode.com/problems/valid-parentheses/tabs/description) | [解答](./20-valid-parentheses.js) | easy |
