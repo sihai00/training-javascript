@@ -16,3 +16,4 @@
 | 21 | Merge Two Sorted Lists | [原文](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [解答](./21-merge-two-sorted-lists.js) | easy |
 | 26 | Remove Duplicates from Sorted Array | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | [解答](./26-remove-duplicates-from-sorted-array.js) | easy |
 | 28 | Implement strStr | [原文](https://leetcode.com/problems/implement-strstr/description/) | [解答](./28-implement-strstr.js) | easy |
+| 35 | Search Insert Position | [原文](https://leetcode.com/problems/search-insert-position/description/) | [解答](./35-search-insert-position.js) | easy |
