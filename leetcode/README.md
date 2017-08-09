@@ -14,6 +14,7 @@
 | 12 | Integer to Roman | [原文](https://leetcode.com/problems/integer-to-roman/description/) | [解答](./12-integer-to-roman.js) | easy |
 | 13 | Roman to Integer | [原文](https://leetcode.com/problems/roman-to-integer/#/description) | [解答](./13-roman-to-integer.js) | easy |
 | 14 | Longest Common Prefix | [原文](https://leetcode.com/problems/longest-common-prefix/tabs/description) | [解答](./14-longest-common-prefix.js) | easy |
+| 15 | 3Sum | [原文](https://leetcode.com/problems/3sum/description/) | [解答](./15-3sum.js) | easy |
 | 20 | Valid Parentheses | [原文](https://leetcode.com/problems/valid-parentheses/tabs/description) | [解答](./20-valid-parentheses.js) | easy |
 | 21 | Merge Two Sorted Lists | [原文](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [解答](./21-merge-two-sorted-lists.js) | easy |
 | 22 | Generate Parentheses | [原文](https://leetcode.com/problems/generate-parentheses/description/) | [解答](./22-generate-parentheses.js) | easy |
