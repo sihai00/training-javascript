@@ -16,6 +16,7 @@
 | 14 | Longest Common Prefix | [原文](https://leetcode.com/problems/longest-common-prefix/tabs/description) | [解答](./14-longest-common-prefix.js) | easy |
 | 15 | 3Sum | [原文](https://leetcode.com/problems/3sum/description/) | [解答](./15-3sum.js) | medium |
 | 16 | 3Sum Closest | [原文](https://leetcode.com/problems/3sum-closest/description/) | [解答](./16-3sum-closest.js) | medium |
+| 17 | Letter Combinations of a Phone Number | [原文](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | [解答](./17-letter-combinations-of-a-phone-number.js) | medium |
 | 20 | Valid Parentheses | [原文](https://leetcode.com/problems/valid-parentheses/tabs/description) | [解答](./20-valid-parentheses.js) | easy |
 | 21 | Merge Two Sorted Lists | [原文](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [解答](./21-merge-two-sorted-lists.js) | easy |
 | 22 | Generate Parentheses | [原文](https://leetcode.com/problems/generate-parentheses/description/) | [解答](./22-generate-parentheses.js) | easy |
