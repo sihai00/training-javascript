@@ -21,6 +21,7 @@
 | 20 | Valid Parentheses | [原文](https://leetcode.com/problems/valid-parentheses/tabs/description) | [解答](./20-valid-parentheses.js) | easy |
 | 21 | Merge Two Sorted Lists | [原文](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [解答](./21-merge-two-sorted-lists.js) | easy |
 | 22 | Generate Parentheses | [原文](https://leetcode.com/problems/generate-parentheses/description/) | [解答](./22-generate-parentheses.js) | easy |
+| 24 | Swap Nodes in Pairs | [原文](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | [解答](./24-swap-nodes-in-pairs.js) | medium |
 | 26 | Remove Duplicates from Sorted Array | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | [解答](./26-remove-duplicates-from-sorted-array.js) | easy |
 | 27 | Remove Element  | [原文](https://leetcode.com/problems/remove-element/description/) | [解答](./27-remove-element.js) | easy |
 | 28 | Implement strStr | [原文](https://leetcode.com/problems/implement-strstr/description/) | [解答](./28-implement-strstr.js) | easy |
