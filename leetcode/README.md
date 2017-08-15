@@ -25,5 +25,6 @@
 | 26 | Remove Duplicates from Sorted Array | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) | [解答](./26-remove-duplicates-from-sorted-array.js) | easy |
 | 27 | Remove Element  | [原文](https://leetcode.com/problems/remove-element/description/) | [解答](./27-remove-element.js) | easy |
 | 28 | Implement strStr | [原文](https://leetcode.com/problems/implement-strstr/description/) | [解答](./28-implement-strstr.js) | easy |
+| 33 | Search in Rotated Sorted Array | [原文](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [解答](./33-search-in-rotated-sorted-array.js) | medium |
 | 35 | Search Insert Position | [原文](https://leetcode.com/problems/search-insert-position/description/) | [解答](./35-search-insert-position.js) | easy |
 | 38 | Count and Say | [原文](https://leetcode.com/problems/count-and-say/description/) | [解答](./38-count-and-say.js) | easy |
