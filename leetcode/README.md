@@ -28,4 +28,5 @@
 | 33 | Search in Rotated Sorted Array | [原文](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [解答](./33-search-in-rotated-sorted-array.js) | medium |
 | 34 | Search for a Range | [原文](https://leetcode.com/problems/search-for-a-range/description/) | [解答](./34-search-for-a-range.js) | medium |
 | 35 | Search Insert Position | [原文](https://leetcode.com/problems/search-insert-position/description/) | [解答](./35-search-insert-position.js) | easy |
+| 36 | Valid Sudoku | [原文](https://leetcode.com/problems/valid-sudoku/description/) | [解答](./36-valid-sudoku.js) | medium |
 | 38 | Count and Say | [原文](https://leetcode.com/problems/count-and-say/description/) | [解答](./38-count-and-say.js) | easy |
