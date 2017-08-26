@@ -28,4 +28,9 @@ var param = common.randomNumber(6, 10, 100)
 // common.isSort(res4, false)
 // common.isSort(res5, false)
 // console.log(param)
-console.log(heapify.heapify([1,2,3,4,5,6]))
+
+var arr = heapify.heapify([1,2,3,4,5,6])
+console.log(arr, 'params')
+
+var res = heapify.heapifySort(arr)
+console.log(res)
