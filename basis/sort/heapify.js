@@ -9,21 +9,57 @@ var common = require('../common')
 
 /**
  * 生成堆
+ * 时间复杂度O(nlogn)
+ */
+// exports.heapify = function(arr){
+//   var res = []
+//   // 遍历数组，依次把元素插入
+//   for (var i = 0; i < arr.length; i++) {
+//     res[i + 1] = arr[i]
+//     // 校验是否满足堆的性质
+//     shiftUp(i + 1)
+//   }
+
+//   function shiftUp(i){
+//     // 如果当前元素比它的父(i / 2)大，那么不满足堆的性质，交换位置
+//     while(i > 1 && res[i] > res[Math.floor(i / 2)]){
+//       res = common.swap(res, i, Math.floor(i / 2))
+//       i = Math.floor(i / 2)
+//     }
+//   }
+
+//   return res
+// }
+
+/**
+ * 优化生成堆：
+ * 从第一个非叶子节点（len / 2）开始采用shiftDown，那么以该节点为根的子树都符合堆的定义
+ * 时间复杂度O(n)
  */
 exports.heapify = function(arr){
   var res = []
-  // 遍历数组，依次把元素插入
-  for (var i = 0; i < arr.length; i++) {
-    res[i + 1] = arr[i]
-    // 校验是否满足堆的性质
-    shiftUp(i + 1)
+  // 格式化数组，从下标为1开始
+  arr.forEach((v, i) => {
+    res[i + 1] = v
+  })
+  var len = res.length
+  // 从第一个非叶子节点（len / 2）开始采用shiftDown
+  for (var i = Math.floor(len / 2); i > 0; i--) {
+    shiftDown(i)
+    console.log(res, i)
   }
 
-  function shiftUp(i){
-    // 如果当前元素比它的父(i / 2)大，那么不满足堆的性质，交换位置
-    while(i > 1 && res[i] > res[Math.floor(i / 2)]){
-      res = common.swap(res, i, Math.floor(i / 2))
-      i = Math.floor(i / 2)
+  function shiftDown(i){
+    // 判断是否存在左子节点
+    while(res[i * 2]){
+      var j = i * 2
+      // 判断左子节点是否比右子节点大
+      if (res[j] < res[j + 1]) j += 1
+      // 判断当前节点是否比子节点大
+      if (res[i] > res[j]) break
+      // 如果当前节点比子节点小，则交换位置。当前的子节点是堆，继续向下维护堆的定义
+      res = common.swap(res, i, j)
+      i = j
     }
   }
 
