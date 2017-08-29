@@ -16,13 +16,18 @@ module.exports = function(arr){
     shiftDown(i, len)
   }
 
-  // sort：堆排序
+  // sort：原地堆排序，没开辟新的内存空间
   for (var i = len - 1; i > 0; i--) {
     res = common.swap(res, i, 0)
-    // 头尾交换，从尾部开始最大，维护除尾部外符合堆的定义
+    // 头尾交换，从尾部开始最大，维护除 尾部 外符合堆的定义
     shiftDown(0, i)
   }
 
+  /**
+   * shiftDown
+   * @params[number] s 开始位置
+   * @params[number] e 结束位置
+   */
   function shiftDown(s, e){
     // 判断是否存在左子树
     while(s * 2 + 1 < e){

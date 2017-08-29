@@ -7,6 +7,7 @@ var quickSort = require('./quickSort')
 var bubbleSort = require('./bubbleSort')
 var heapify = require('./heapify')
 var heapify0 = require('./heapify0')
+var heapifyIndex = require('./heapifyIndex')
 
 // 随机数
 var param = common.randomNumber(6, 10, 100)
@@ -30,6 +31,6 @@ var param = common.randomNumber(6, 10, 100)
 // common.isSort(res5, false)
 // console.log(param)
 
-var arr = heapify0([1,2,3,4,5,6])
+var arr = heapifyIndex.heapify([1,2,3,4])
 console.log(arr)
 
