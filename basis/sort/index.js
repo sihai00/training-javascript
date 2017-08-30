@@ -9,7 +9,7 @@ var heapify = require('./heapify')
 var heapify0 = require('./heapify0')
 var heapifyIndex = require('./heapifyIndex')
 
-// 随机数
+// 随机数组
 var param = common.randomNumber(6, 10, 100)
 
 // 执行
