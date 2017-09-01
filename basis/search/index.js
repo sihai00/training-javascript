@@ -6,5 +6,6 @@ var tree = require('./tree')
 // var param = common.randomNumber(6, 10, 100)
 // var res = binary.ceil([1,3,5,7,9], 6)
 
-var res = tree.insert([1,2,3,4,5,6])
+var mytree = tree.insert([3,2,4,1,5,6])
+var res = tree.search(mytree, 3)
 console.dir(res, {depth: null})
