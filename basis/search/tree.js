@@ -49,3 +49,33 @@ exports.insert = function(arr){
 
   return res
 }
+/**
+ * 前序遍历
+ */
+exports.preOther = function __preOrder(node){
+  if (node != null) {
+    console.log(node.val)
+    __preOrder(node.left)
+    __preOrder(node.right)
+  }
+}
+/**
+ * 中序遍历
+ */
+exports.inOther = function __inOrder(node){
+  if (node != null) {
+    __inOrder(node.left)
+    console.log(node.val)
+    __inOrder(node.right)
+  }
+}
+/**
+ * 后序遍历
+ */
+exports.postOther = function __postOrder(node){
+  if (node != null) {
+    __postOrder(node.left)
+    __postOrder(node.right)
+    console.log(node.val)
+  }
+}
