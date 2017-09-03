@@ -19,6 +19,16 @@ function __insert(node, val, i){
 
   return node
 }
+exports.insert = function(arr){
+  var res = null
+
+  arr.forEach((v, i) =>{
+    res = __insert(res, v, i + 1)
+  })
+
+  return res
+}
+
 /**
  * 是否包含
  */
@@ -39,20 +49,10 @@ exports.search = function __search(node, key){
   if (node.key > key) return __search(node.left, key)
   if (node.key < key) return __search(node.right, key)
 }
-
-exports.insert = function(arr){
-  var res = null
-
-  arr.forEach((v, i) =>{
-    res = __insert(res, v, i + 1)
-  })
-
-  return res
-}
 /**
- * 前序遍历
+ * 深度优先遍历：前序遍历
  */
-exports.preOther = function __preOrder(node){
+exports.preOrder = function __preOrder(node){
   if (node != null) {
     console.log(node.val)
     __preOrder(node.left)
@@ -60,9 +60,9 @@ exports.preOther = function __preOrder(node){
   }
 }
 /**
- * 中序遍历
+ * 深度优先遍历：中序遍历
  */
-exports.inOther = function __inOrder(node){
+exports.inOrder = function __inOrder(node){
   if (node != null) {
     __inOrder(node.left)
     console.log(node.val)
@@ -70,12 +70,35 @@ exports.inOther = function __inOrder(node){
   }
 }
 /**
- * 后序遍历
+ * 深度优先遍历：后序遍历
  */
-exports.postOther = function __postOrder(node){
+exports.postOrder = function __postOrder(node){
   if (node != null) {
     __postOrder(node.left)
     __postOrder(node.right)
     console.log(node.val)
   }
+}
+
+/**
+ * 广度优先遍历
+ */
+exports.leverOrder = function __leverOrder(node){
+  var arr = []
+  var nextNode = node
+  var i = 1
+
+  if (node !== null) {
+    arr.push(node.val)
+  }
+
+  while(nextNode){
+    if (nextNode.left) arr.push(nextNode.left.val)
+    if (nextNode.right) arr.push(nextNode.right.val)
+
+    i += 1
+    nextNode = 
+  }
+
+  return arr
 }

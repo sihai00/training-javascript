@@ -8,5 +8,5 @@ var tree = require('./tree')
 
 var mytree = tree.insert([3,2,4,1,5,6])
 // var res = tree.search(mytree, 3)
-var res = tree.preOther(mytree)
+var res = tree.preOrder(mytree)
 console.dir(mytree, {depth: null})
