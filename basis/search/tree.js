@@ -5,6 +5,7 @@
 function BST(val, i){
   this.key = i
   this.val = val
+  this.child = {}
 }
 
 /**
@@ -14,8 +15,8 @@ function __insert(node, val, i){
   if (node == null) return new BST(val, i)
 
   if (node.val === val) return node
-  if (node.val > val) node.left = __insert(node.left, val, i)
-  if (node.val < val) node.right = __insert(node.right, val, i)
+  if (node.val > val) node.child.left = __insert(node.child.left, val, i)
+  if (node.val < val) node.child.right = __insert(node.child.right, val, i)
 
   return node
 }
@@ -36,8 +37,8 @@ exports.contain = function __contain(node, key){
   if (node == null) return false
 
   if (node.key === key) return true
-  if (node.key > key) return __contain(node.left, key)
-  if (node.key < key) return __contain(node.right, key)
+  if (node.key > key) return __contain(node.child.left, key)
+  if (node.key < key) return __contain(node.child.right, key)
 }
 /**
  * 返回key所对应的val值
@@ -46,8 +47,8 @@ exports.search = function __search(node, key){
   if (node == null) return false
 
   if (node.key === key) return node.val
-  if (node.key > key) return __search(node.left, key)
-  if (node.key < key) return __search(node.right, key)
+  if (node.key > key) return __search(node.child.left, key)
+  if (node.key < key) return __search(node.child.right, key)
 }
 /**
  * 深度优先遍历：前序遍历
@@ -55,8 +56,8 @@ exports.search = function __search(node, key){
 exports.preOrder = function __preOrder(node){
   if (node != null) {
     console.log(node.val)
-    __preOrder(node.left)
-    __preOrder(node.right)
+    __preOrder(node.child.left)
+    __preOrder(node.child.right)
   }
 }
 /**
@@ -64,9 +65,9 @@ exports.preOrder = function __preOrder(node){
  */
 exports.inOrder = function __inOrder(node){
   if (node != null) {
-    __inOrder(node.left)
+    __inOrder(node.child.left)
     console.log(node.val)
-    __inOrder(node.right)
+    __inOrder(node.child.right)
   }
 }
 /**
@@ -74,31 +75,30 @@ exports.inOrder = function __inOrder(node){
  */
 exports.postOrder = function __postOrder(node){
   if (node != null) {
-    __postOrder(node.left)
-    __postOrder(node.right)
+    __postOrder(node.child.left)
+    __postOrder(node.child.right)
     console.log(node.val)
   }
 }
 
 /**
  * 广度优先遍历
+ * 1.声明一个数组queue，将node入队
+ * 2.遍历该数组，只要不为空就继续执行
+ * 3.出队数组头节点，然后把该节点的子节点依次入队，直到节点没有子节点
  */
 exports.leverOrder = function __leverOrder(node){
-  var arr = []
-  var nextNode = node
-  var i = 1
+  var res = []
+  var queue = [node]
 
-  if (node !== null) {
-    arr.push(node.val)
+  while(queue.length !== 0){
+    var item = queue.shift()
+    res.push(item.val)
+
+    for(var key of Object.keys(item.child)){
+      queue.push(item.child[key])
+    }
   }
 
-  while(nextNode){
-    if (nextNode.left) arr.push(nextNode.left.val)
-    if (nextNode.right) arr.push(nextNode.right.val)
-
-    i += 1
-    nextNode = 
-  }
-
-  return arr
+  return res
 }
