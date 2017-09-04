@@ -102,3 +102,49 @@ exports.leverOrder = function __leverOrder(node){
 
   return res
 }
+
+/**
+ * 最大值
+ */
+exports.max = function __max(node){
+  if (node.child.right == null) {
+    return node.val
+  }
+
+  return __max(node.child.right)
+}
+
+/**
+ * 最小值
+ */
+exports.min = function __min(node){
+  if (node.child.left == null) {
+    return node.val
+  }
+
+  return __min(node.child.left)
+}
+
+/**
+ * 删除最小值
+ */
+exports.removeMin = function __removeMin(node){
+  if (node.child.left == null) {
+    return node.child.right
+  }
+
+  node.child.left =  __removeMin(node.child.left)
+  return node
+}
+
+/**
+ * 删除最大值
+ */
+exports.removeMax = function __removeMax(node){
+  if (node.child.right == null) {
+    return node.child.left
+  }
+
+  node.child.right =  __removeMax(node.child.right)
+  return node
+}
