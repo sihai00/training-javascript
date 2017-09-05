@@ -8,5 +8,5 @@ var tree = require('./tree')
 
 var mytree = tree.insert([3,1,5,0,4,6,2])
 // var res = tree.search(mytree, 6)
-var res = tree.removeMax(mytree)
+var res = tree.remove(mytree, 3)
 console.dir(res, {depth: null})
