@@ -48,7 +48,7 @@ exports.contain = __contain
 function __search(node, key){
   if (node == null) return false
 
-  if (node.key === key) return node.val
+  if (node.key === key) return node
   if (node.key > key) return __search(node.child.left, key)
   if (node.key < key) return __search(node.child.right, key)
 }
@@ -162,6 +162,31 @@ function __removeMax(node){
   return node
 }
 exports.removeMax = __removeMax
+
+/**
+ * 前驱：寻找key节点的前一个节点（key必须存在于树中）
+ * 思路：key树中左子树的最大值
+ */
+function __predecessor(node, key){
+  if (node == null) return null
+
+  var res = __search(node, key)
+  
+  if (res.child.left != null) return __max(res.child.left)
+}
+exports.predecessor = __predecessor
+
+/**
+ * 后继：寻找key节点的后一个节点（key必须存在于树中）
+ * 思路：key树中右子树的最小值
+ */
+function __successor(node, key){
+  if (node == null) return null
+
+  var res = __search(node, key)
+  if (res.child.right != null) return __min(res.child.right)
+}
+exports.successor = __successor
 
 /**
  * 删除键值为key的节点
