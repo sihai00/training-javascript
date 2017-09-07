@@ -2,29 +2,29 @@
  * 二分搜索树
  * 当前节点比左孩子大，比右孩子小
  */
-function BST(val, i){
-  this.key = i
+function BST(val){
   this.val = val
-  this.child = {}
+  // this.left = null
+  // this.right = null
 }
 
 /**
  * 插入
  */
-function __insert(node, val, i){
-  if (node == null) return new BST(val, i)
+function __insert(node, val){
+  if (node == null) return new BST(val)
 
   if (node.val === val) return node
-  if (node.val > val) node.child.left = __insert(node.child.left, val, i)
-  if (node.val < val) node.child.right = __insert(node.child.right, val, i)
+  if (node.val > val) node.left = __insert(node.left, val)
+  if (node.val < val) node.right = __insert(node.right, val)
 
   return node
 }
 exports.insert = function(arr){
   var res = null
 
-  arr.forEach((v, i) =>{
-    res = __insert(res, v, i + 1)
+  arr.forEach(v =>{
+    res = __insert(res, v)
   })
 
   return res
@@ -33,24 +33,24 @@ exports.insert = function(arr){
 /**
  * 是否包含
  */
-function __contain(node, key){
+function __contain(node, val){
   if (node == null) return false
 
-  if (node.key === key) return true
-  if (node.key > key) return __contain(node.child.left, key)
-  if (node.key < key) return __contain(node.child.right, key)
+  if (node.val === val) return true
+  if (node.val > val) return __contain(node.left, val)
+  if (node.val < val) return __contain(node.right, val)
 }
 exports.contain = __contain
 
 /**
- * 返回key所对应的val值
+ * 返回val所对应的val值
  */
-function __search(node, key){
+function __search(node, val){
   if (node == null) return false
 
-  if (node.key === key) return node
-  if (node.key > key) return __search(node.child.left, key)
-  if (node.key < key) return __search(node.child.right, key)
+  if (node.val === val) return node
+  if (node.val > val) return __search(node.left, val)
+  if (node.val < val) return __search(node.right, val)
 }
 exports.search = __search
 
@@ -60,8 +60,8 @@ exports.search = __search
 function __preOrder(node){
   if (node != null) {
     console.log(node.val)
-    __preOrder(node.child.left)
-    __preOrder(node.child.right)
+    __preOrder(node.left)
+    __preOrder(node.right)
   }
 }
 exports.preOrder = __preOrder
@@ -71,9 +71,9 @@ exports.preOrder = __preOrder
  */
 function __inOrder(node){
   if (node != null) {
-    __inOrder(node.child.left)
+    __inOrder(node.left)
     console.log(node.val)
-    __inOrder(node.child.right)
+    __inOrder(node.right)
   }
 }
 exports.inOrder = __inOrder
@@ -83,8 +83,8 @@ exports.inOrder = __inOrder
  */
 function __postOrder(node){
   if (node != null) {
-    __postOrder(node.child.left)
-    __postOrder(node.child.right)
+    __postOrder(node.left)
+    __postOrder(node.right)
     console.log(node.val)
   }
 }
@@ -102,10 +102,11 @@ function __leverOrder(node){
 
   while(queue.length !== 0){
     var item = queue.shift()
-    res.push(item.val)
-
-    for(var key of Object.keys(item.child)){
-      queue.push(item.child[key])
+    
+    if (item) {
+      res.push(item.val)
+      if (item.left) queue.push(item.left)
+      if (item.right) queue.push(item.right)
     }
   }
 
@@ -117,11 +118,11 @@ exports.leverOrder = __leverOrder
  * 最大值
  */
 function __max(node){
-  if (node.child.right == null) {
+  if (node.right == null) {
     return node
   }
 
-  return __max(node.child.right)
+  return __max(node.right)
 }
 exports.max = __max
 
@@ -129,11 +130,11 @@ exports.max = __max
  * 最小值
  */
 function __min(node){
-  if (node.child.left == null) {
+  if (node.left == null) {
     return node
   }
 
-  return __min(node.child.left)
+  return __min(node.left)
 }
 exports.min = __min
 
@@ -141,11 +142,11 @@ exports.min = __min
  * 删除最小值
  */
 function __removeMin(node){
-  if (node.child.left == null) {
-    return node.child.right
+  if (node.left == null) {
+    return node.right
   }
 
-  node.child.left =  __removeMin(node.child.left)
+  node.left =  __removeMin(node.left)
   return node
 }
 exports.removeMin = __removeMin
@@ -154,67 +155,102 @@ exports.removeMin = __removeMin
  * 删除最大值
  */
 function __removeMax(node){
-  if (node.child.right == null) {
-    return node.child.left
+  if (node.right == null) {
+    return node.left
   }
 
-  node.child.right =  __removeMax(node.child.right)
+  node.right =  __removeMax(node.right)
   return node
 }
 exports.removeMax = __removeMax
 
 /**
- * 前驱：寻找key节点的前一个节点（key必须存在于树中）
+ * 前驱：寻找val节点的前一个节点（key必须存在于树中）
  * 思路：key树中左子树的最大值
  */
-function __predecessor(node, key){
-  if (node == null) return null
+function __predecessor(node, val){
+  var res = __search(node, val)
+  if (res == null) return null
 
-  var res = __search(node, key)
-  
-  if (res.child.left != null) return __max(res.child.left)
+  if (res.left != null) return __max(res.left)
+
+  res = predecessorFromAncestor(node, val)
+  return res ? res : null
 }
 exports.predecessor = __predecessor
+  
+function predecessorFromAncestor(node, val){
+  if (node.val === val) return null
 
+  var max = null
+  if (node.val > val) return predecessorFromAncestor(node.left, val)
+  else{
+    max = predecessorFromAncestor(node.right, val)
+
+    if (max) {
+      return max.val > node.val ? max : node
+    }else{
+      return node
+    }
+  }
+}
 /**
  * 后继：寻找key节点的后一个节点（key必须存在于树中）
  * 思路：key树中右子树的最小值
  */
-function __successor(node, key){
+function __successor(node, val){
   if (node == null) return null
 
-  var res = __search(node, key)
-  if (res.child.right != null) return __min(res.child.right)
+  var res = __search(node, val)
+  if (res.right != null) return __min(res.right)
+
+  res = successorFromAncestor(node, val)
+  return res ? res : null
 }
 exports.successor = __successor
 
+function successorFromAncestor(node, val){
+  if (node.val === val) return null
+
+  var min = null
+  if (node.val < val) return successorFromAncestor(node.right, val)
+  else{
+    min = successorFromAncestor(node.left, val)
+
+    if (min) {
+      return min.val < val ? min.val : val
+    }else{
+      return node
+    }
+  }
+}
 /**
- * 删除键值为key的节点
- * 1.递归寻找到键值为key的节点
+ * 删除值为val的节点
+ * 1.递归寻找到值为val的节点
  * 2.找出当前节点的右子树中的最小值作为替换节点
  * 3.删除当前节点，返回替换节点
  */
-function __remove(node, key){
+function __remove(node, val){
   if (node == null) return null
 
-  if (node.key > key) {
-    node.child.left = __remove(node.child.left, key)
+  if (node.val > val) {
+    node.left = __remove(node.left, val)
     return node
-  } 
-  else if (node.key < key) {
-    node.child.right = __remove(node.child.right, key)
+  }
+  else if (node.val < val) {
+    node.right = __remove(node.right, val)
     return node
-  } 
-  else { // key == node.key
-    if (node.child.left == null) return node.child.right
-    if (node.child.right == null) return node.child.left
+  }
+  else { // val == node.val
+    if (node.left == null) return node.right
+    if (node.right == null) return node.left
 
     // 找到当前树中的最小值，赋值为替换节点
-    var min = __min(node)
-    var replace = new BST(min.val, min.key)
+    var min = __min(node.right)
+    var replace = new BST(min.val)
     // 删除最小值
-    replace.child.left = __removeMin(node.child.left)
-    replace.child.right = node.child.right
+    replace.left = node.left
+    replace.right = __removeMin(node.right)
     // 返回替换节点
     return replace
   }
