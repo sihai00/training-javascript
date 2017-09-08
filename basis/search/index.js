@@ -7,7 +7,7 @@ var tree = require('./tree')
 // var res = binary.ceil([1,3,5,7,9], 6)
 
 // var mytree = tree.insert([10,5,15,2,8,12,17,1,3,7,9,11,13,16,18])
-var mytree = tree.insert([10,5,15,2,8,12,17,1,3,7,9,11,16,18])
+var mytree = tree.insert([10,5,15,2,8,12,17,1,3,7,9,11,13,16,18])
 
-var res = tree.predecessor(mytree, 15)
+var res = tree.ceil(mytree, 8)
 console.dir(res, {depth: null})

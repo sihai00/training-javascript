@@ -165,6 +165,40 @@ function __removeMax(node){
 exports.removeMax = __removeMax
 
 /**
+ * floor：如果存在val值则返回，没有则返回最接近该值的最小值
+ */
+function __floor(node, val){
+  if (node == null) return null
+  if (node.val === val) return node
+
+  if (node.val > val){
+    return __floor(node.left, val)
+  }else{
+    // 可能右子树中存在该值
+    var tem = __floor(node.right, val)
+    return tem ? tem : node
+  }
+}
+exports.floor = __floor
+
+/**
+ * ceil：如果存在val值则返回，没有则返回最接近该值的最大值
+ */
+function __ceil(node, val){
+  if (node == null) return null
+  if (node.val === val) return node
+
+  if (node.val < val){
+    return __ceil(node.right, val)
+  }else{
+    // 可能左子树中存在该值
+    var tem = __ceil(node.left, val)
+    return tem ? tem : node
+  }
+}
+exports.ceil = __ceil
+
+/**
  * 前驱：寻找val节点的前一个节点（key必须存在于树中）
  * 思路：key树中左子树的最大值
  */
