@@ -2,6 +2,7 @@ var common = require('../common')
 var binary = require('./binary')
 var tree = require('./tree')
 var union = require('./union')
+var text = require('./text')
 
 // 随机数组
 // var param = common.randomNumber(6, 10, 100)
@@ -11,8 +12,6 @@ var union = require('./union')
 // var res = tree.ceil(mytree, 8)
 // console.dir(res, {depth: null})
 
-var count = 10
-var data = union.UF2(count)
-// var res = union.unionElements(data, 1, 2)
-union.text(data)
-// console.log(res, 'res')
+
+var res = new union(10)
+console.log(res.unionElements(1,2), 'res')

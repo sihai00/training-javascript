@@ -2,78 +2,86 @@
  * 并查集
  * 数组表示，值表示parent指向其父节点
  */
-
-exports.UF2 = function(count){
-  var parent = []
-
-  for (var i = 0; i < count; i++) {
-    parent.push(i)
+module.exports = class union{
+  constructor(count){
+    this.parent = []
+    // 层级数
+    this.level = []
+    // 初始化
+    this.UF2(count)
   }
-
-  return parent
-}
-
-/**
- * 寻找根节点
- */
-function __find(parent, p){
-  var len = parent.length
-  if (len < 0) return 
-  if (p < 0 || p >= len) return 
-
-  while(p !== parent[p]){
-    p = parent[p]
+  UF2(count){
+    for (var i = 0; i < count; i++) {
+      this.parent[i] = i
+      this.level[i] = 1
+    }
   }
+  /**
+   * 寻找根节点
+   */
+  find(p){
+    let parent = this.parent
+    let len = parent.length
 
-  return p
-}
+    if (len < 0) return 
+    if (p < 0 || p >= len) return 
 
-exports.find = __find
+    // while(p !== parent[p]){
+    //   // 压缩路径，直接寻找父节点的父节点。即使父节点是根，那么其还是指向自己
+    //   p = parent[parent[p]]
+    // }
+    // return p
 
-/**
- * 是否相连
- * 判断两节点的根是否相同
- */
-function __isConnected(parent, p, q){
-  return __find(parent, p) === __find(parent, q)
-}
+    // 压缩路径，直接把当前节点的父节点赋值为根节点
+    if (p !== parent[p]) parent[p] = this.find(parent[p])
 
-exports.isConnected = __isConnected
-
-/**
- * 连接两节点
- * 把两个节点的父节点相连接
- */
-function __unionElements(parent, p, q){
-  var pRoot = __find(parent, p)
-  var qRoot = __find(parent, q)
-
-  if (pRoot != qRoot) parent[pRoot] = qRoot
-
-  return parent
-}
-
-exports.unionElements = __unionElements
-
-/**
- * 测试
- */
-exports.text = function(parent){
-  var len = parent.length
-  var res = parent
-
-  console.time('union')
-  for (var i = 0; i < len; i++) {
-    var a = Math.floor(Math.random() * len)
-    var b = Math.floor(Math.random() * len)
-    res = __unionElements(res, a, b)
+    return parent[p]
   }
-
-  for (var i = 0; i < len; i++) {
-    var a = Math.floor(Math.random() * len)
-    var b = Math.floor(Math.random() * len)
-
-    __isConnected(parent, a, b)
+  /**
+   * 是否相连
+   * 判断两节点的根是否相同
+   */
+  isConnected(p, q){
+    return this.find(p) === this.find(q)
   }
-  console.timeEnd('union')
+  /**
+   * 连接两节点
+   * 把两个节点的父节点相连接
+   */
+  unionElements(p, q){
+    let parent = this.parent
+    let level = this.level
+    let pRoot = this.find(p)
+    let qRoot = this.find(q)
+
+    // 根据节点的层级优化，层级小的合并到层级高的
+    if (level[p] !== level[q]) {
+      parent[pRoot] = qRoot
+    }else{
+      parent[pRoot] = qRoot
+      level[qRoot] += 1
+    }
+
+    return parent
+  }
+  text(){
+    let parent = this.parent
+    let len = parent.length
+
+    console.time('union')
+    for (let i = 0; i < len; i++) {
+      let a = Math.floor(Math.random() * len)
+      let a = Math.floor(Math.random() * len)
+      this.unionElements(a, b)
+    }
+
+    for (let i = 0; i < len; i++) {
+      let a = Math.floor(Math.random() * len)
+      let b = Math.floor(Math.random() * len)
+
+      __isConnected(a, b)
+    }
+    console.timeEnd('union')
+  }
 }
+
