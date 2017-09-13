@@ -1,5 +1,5 @@
 // 稀疏图 -- 邻接表
-module.exports = class SparseGraph{
+exports.SparseGraph = class SparseGraph{
   constructor(n, directed){
     // 点
     this.n = n
@@ -42,3 +42,31 @@ module.exports = class SparseGraph{
     return false
   }
 }
+
+exports.adjterator = class adjterator{
+  constructor(graph, v){
+    this.v = v
+    this.index = 0
+    this.graph = graph
+  }
+  begin(){
+    this.index = 0
+    let len = this.graph[this.v].length
+
+    if (len) return this.graph[this.v][this.index]
+
+    return -1
+  }
+  next(){
+    let len = this.graph[this.v].length
+    this.index += 1
+
+    if (this.index < len) return this.graph[this.v][this.index]
+
+    return -1
+  }
+  end(){
+    return this.index >= this.graph[this.v].length
+  }
+}
+

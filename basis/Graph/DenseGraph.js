@@ -1,5 +1,5 @@
 // 稠密图 -- 邻接矩阵
-module.exports = class DenseGraph{
+exports.DenseGraph = class DenseGraph{
   constructor(n, directed){
     // 点
     this.n = n
@@ -37,5 +37,30 @@ module.exports = class DenseGraph{
     if (w < 0 && w > this.n) return
 
     return this.data[v][w]
+  }
+}
+
+exports.adjterator = class adjterator{
+  constructor(graph, v){
+    this.v = v
+    this.index = -1
+    this.graph = graph
+  }
+  begin(){
+    this.index = -1
+    // 寻找第一个为true的下标
+    return this.next()
+  }
+  next(){
+    let len = this.graph[this.v].length
+    for (this.index += 1; this.index < len; this.index++) {
+      let data = this.graph[this.v][this.index]
+      if (data) return this.index
+    }
+
+    return -1
+  }
+  end(){
+    return this.index >= this.graph[this.v].length
   }
 }
