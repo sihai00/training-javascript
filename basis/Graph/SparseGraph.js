@@ -41,6 +41,13 @@ exports.SparseGraph = class SparseGraph{
 
     return false
   }
+  show(){
+    let data = this.data
+
+    for (var i = 0; i < data.length; i++) {
+      console.log(`${i}: ${data[i].join(' ')}`)
+    }
+  }
 }
 
 exports.adjterator = class adjterator{

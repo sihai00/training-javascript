@@ -38,6 +38,16 @@ exports.DenseGraph = class DenseGraph{
 
     return this.data[v][w]
   }
+  show(){
+    let data = this.data
+    for (var i = 0; i < data.length; i++) {
+      let line = ''
+      for (var j = 0; j < data[i].length; j++) {
+        line += ` ${data[i][j] ? 1 : 0}`
+      }
+      console.log(`${i}: ${line}`)
+    }
+  }
 }
 
 exports.adjterator = class adjterator{

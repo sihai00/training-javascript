@@ -1,27 +1,17 @@
-var DenseGraph = require('./DenseGraph')
-var SparseGraph = require('./SparseGraph')
+const DenseGraph = require('./DenseGraph')
+const SparseGraph = require('./SparseGraph')
+const ReadGraph = require('./ReadGraph')
 
-// var res = new DenseGraph(10, false)
-var n = 20
-var m = 100
-var res = new DenseGraph.DenseGraph(n, false)
+var res = ReadGraph(new DenseGraph.DenseGraph(13, false), 'test1.txt').show()
 
-for (var i = 0; i < m; i++) {
-  var a = Math.floor(Math.random() * n)
-  var b = Math.floor(Math.random() * n)
-  res.addEdge(a, b)
-}
+// for (var j = 0; j < n; j++) {
+//   var adj = new DenseGraph.adjterator(res.data, j)
+//   var col = ''
 
-console.log(res.data[0], 'res')
-
-for (var j = 0; j < n; j++) {
-  var adj = new DenseGraph.adjterator(res.data, j)
-  var col = ''
-
-  for (var m = adj.begin(); !adj.end(); m = adj.next()) {
-    col += (m + ' ')
-  }
-  console.log(j + ': ' + col)
-}
+//   for (var m = adj.begin(); !adj.end(); m = adj.next()) {
+//     col += (m + ' ')
+//   }
+//   console.log(j + ': ' + col)
+// }
 // console.dir(res, {depth: null})
 
