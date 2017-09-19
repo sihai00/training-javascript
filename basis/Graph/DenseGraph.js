@@ -8,10 +8,10 @@ exports.DenseGraph = class DenseGraph{
     // 是否有向图
     this.directed = directed
     // 储存数据
-    this.data = []
+    this.graph = []
 
     for (var i = 0; i < n; i++) {
-      this.data.push(Array(n).join(',').split(',').map((v, i) => false))
+      this.graph.push(Array(n).join(',').split(',').map((v, i) => false))
     }
   }
   n(){
@@ -27,8 +27,8 @@ exports.DenseGraph = class DenseGraph{
     // 去掉已存在和平行边
     if (this.hasEdge(v, w)) return
       
-    this.data[v][w] = true 
-    if (!this.directed) this.data[w][v] = true 
+    this.graph[v][w] = true 
+    if (!this.directed) this.graph[w][v] = true 
 
     this.m += 1
   }
@@ -36,25 +36,23 @@ exports.DenseGraph = class DenseGraph{
     if (v < 0 && v > this.n) return 
     if (w < 0 && w > this.n) return
 
-    return this.data[v][w]
+    return this.graph[v][w]
   }
   show(){
-    let data = this.data
-    for (var i = 0; i < data.length; i++) {
+    let graph = this.graph
+    for (var i = 0; i < graph.length; i++) {
       let line = ''
-      for (var j = 0; j < data[i].length; j++) {
-        line += ` ${data[i][j] ? 1 : 0}`
+      for (var j = 0; j < graph[i].length; j++) {
+        line += ` ${graph[i][j] ? 1 : 0}`
       }
       console.log(`${i}: ${line}`)
     }
   }
-}
-
-exports.adjterator = class adjterator{
-  constructor(graph, v){
+  adjterator(v){
     this.v = v
     this.index = -1
-    this.graph = graph
+
+    return this
   }
   begin(){
     this.index = -1
@@ -74,3 +72,28 @@ exports.adjterator = class adjterator{
     return this.index >= this.graph[this.v].length
   }
 }
+
+// exports.adjterator = class adjterator{
+//   constructor(graph, v){
+//     this.v = v
+//     this.index = -1
+//     this.graph = graph
+//   }
+//   begin(){
+//     this.index = -1
+//     // 寻找第一个为true的下标
+//     return this.next()
+//   }
+//   next(){
+//     let len = this.graph[this.v].length
+//     for (this.index += 1; this.index < len; this.index++) {
+//       let data = this.graph[this.v][this.index]
+//       if (data) return this.index
+//     }
+
+//     return -1
+//   }
+//   end(){
+//     return this.index >= this.graph[this.v].length
+//   }
+// }
