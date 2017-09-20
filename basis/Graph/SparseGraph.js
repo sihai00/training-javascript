@@ -71,7 +71,7 @@ exports.SparseGraph = class SparseGraph{
     return -1
   }
   end(){
-    console.log('inner', this.v, this.graph[this.v], this.index >= this.graph[this.v].length)
+    // console.log('inner', this.v, this.graph[this.v], this.index >= this.graph[this.v].length)
     return this.index >= this.graph[this.v].length
   }
 }
