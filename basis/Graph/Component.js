@@ -9,7 +9,7 @@ module.exports = class Component{
     this.visited = []
     // 记录联通分量（不相连的图）
     this.ccount = 0
-    // 通过联通分量来区分节点的父级
+    // 通过联通分量来区分节点的父级,用来判断是否同一个父级
     this.id = []
 
     // 初始化

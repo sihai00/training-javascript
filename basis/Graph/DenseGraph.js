@@ -1,3 +1,5 @@
+const Edge = require('./Edge')
+
 // 稠密图 -- 邻接矩阵
 exports.DenseGraph = class DenseGraph{
   constructor(n, directed){
@@ -11,7 +13,7 @@ exports.DenseGraph = class DenseGraph{
     this.graph = []
 
     for (var i = 0; i < n; i++) {
-      this.graph.push(Array(n).join(',').split(',').map((v, i) => false))
+      this.graph.push(Array.from({length: n}, n => null))
     }
   }
   n(){
@@ -21,14 +23,14 @@ exports.DenseGraph = class DenseGraph{
     return this.m
   }
   // 添加边
-  addEdge(v, w){
+  addEdge(v, w, weight){
     if (v < 0 && v > this.n) return 
     if (w < 0 && w > this.n) return
     // 去掉已存在和平行边
     if (this.hasEdge(v, w)) return
-      
-    this.graph[v][w] = true 
-    if (!this.directed) this.graph[w][v] = true 
+    
+    this.graph[v][w] = new Edge(v, w, weight)
+    if (!this.directed) this.graph[w][v] = new Edge(v, w, weight) 
 
     this.m += 1
   }
@@ -36,14 +38,15 @@ exports.DenseGraph = class DenseGraph{
     if (v < 0 && v > this.n) return 
     if (w < 0 && w > this.n) return
 
-    return this.graph[v][w]
+    return this.graph[v][w] !== null
   }
   show(){
     let graph = this.graph
+
     for (var i = 0; i < graph.length; i++) {
       let line = ''
       for (var j = 0; j < graph[i].length; j++) {
-        line += ` ${graph[i][j] ? 1 : 0}`
+        line += ` ${graph[i][j] ? graph[i][j]['weight'] : null}`
       }
       console.log(`${i}: ${line}`)
     }
@@ -63,10 +66,10 @@ exports.DenseGraph = class DenseGraph{
     let len = this.graph[this.v].length
     for (this.index += 1; this.index < len; this.index++) {
       let data = this.graph[this.v][this.index]
-      if (data) return this.index
+      return data ? data : null
     }
 
-    return -1
+    return null
   }
   end(){
     return this.index >= this.graph[this.v].length

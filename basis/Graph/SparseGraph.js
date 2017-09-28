@@ -1,3 +1,5 @@
+const Edge = require('./Edge')
+
 // 稀疏图 -- 邻接表
 exports.SparseGraph = class SparseGraph{
   constructor(n, directed){
@@ -21,13 +23,13 @@ exports.SparseGraph = class SparseGraph{
     return this.m
   }
   // 添加边
-  addEdge(v, w){
+  addEdge(v, w, weight){
     if (v < 0 && v > this.n) return 
     if (w < 0 && w > this.n) return
     // if (this.hasEdge(v, w)) return
-      
-    this.graph[v].push(w)
-    if (v !== w && !this.directed) this.graph[w].push(v)
+       
+    this.graph[v].push(new Edge(v, w, weight))
+    if (v !== w && !this.directed) this.graph[w].push(new Edge(w, v, weight))
 
     this.m += 1
   }
@@ -36,7 +38,7 @@ exports.SparseGraph = class SparseGraph{
     if (w < 0 && w > this.n) return
 
     for (var i = 0; i < this.graph[v].length; i++) {
-      if (this.graph[v][i] === w) return true
+      if (this.graph[v][i].other(v) === w) return true
     }
 
     return false
@@ -45,7 +47,11 @@ exports.SparseGraph = class SparseGraph{
     let graph = this.graph
 
     for (var i = 0; i < graph.length; i++) {
-      console.log(`${i}: ${graph[i].join(' ')}`)
+      let line = ''
+      for (var j = 0; j < graph[i].length; j++) {
+        line += ` ${graph[i][j] ? `(to:${graph[i][j].other(`${i}`)}, wt: ${graph[i][j]['weight']})` : null}`
+      }
+      console.log(`${i}: ${line}`)
     }
   }
   adjterator(v){
@@ -60,7 +66,7 @@ exports.SparseGraph = class SparseGraph{
 
     if (len) return this.graph[this.v][this.index]
 
-    return -1
+    return null
   }
   next(){
     let len = this.graph[this.v].length
@@ -68,7 +74,7 @@ exports.SparseGraph = class SparseGraph{
 
     if (this.index < len) return this.graph[this.v][this.index]
 
-    return -1
+    return null
   }
   end(){
     // console.log('inner', this.v, this.graph[this.v], this.index >= this.graph[this.v].length)

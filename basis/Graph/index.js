@@ -3,14 +3,14 @@ const SparseGraph = require('./SparseGraph')
 const ReadGraph = require('./ReadGraph')
 const Component = require('./Component')
 const Path = require('./Path')
+const ShortestPath = require('./ShortestPath')
 
-var graph = ReadGraph(new SparseGraph.SparseGraph(6, false), 'test2.txt')
+var graph = ReadGraph(new SparseGraph.SparseGraph(8, false), 'test3.txt').show()
 // const res = new Component(graph)
-// console.dir(res.count(), {depth: null})
+// console.dir(graph, {depth: null})
 
-const res = new Path(graph, 0).path(5).showPath()
-
-
+// new Path(graph, 0).path(5).showPath()
+// new ShortestPath(graph, 0).path(5).showPath()
 
 // for (var j = 0; j < 6; j++) {
 //   var adj = graph.adjterator(j)
