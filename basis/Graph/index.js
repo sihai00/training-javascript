@@ -5,7 +5,7 @@ const Component = require('./Component')
 const Path = require('./Path')
 const ShortestPath = require('./ShortestPath')
 
-var graph = ReadGraph(new SparseGraph.SparseGraph(8, false), 'test3.txt').show()
+var graph = ReadGraph(new DenseGraph.DenseGraph(8, false), 'test3.txt').show()
 // const res = new Component(graph)
 // console.dir(graph, {depth: null})
 

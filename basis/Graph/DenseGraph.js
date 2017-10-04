@@ -42,7 +42,7 @@ exports.DenseGraph = class DenseGraph{
   }
   show(){
     let graph = this.graph
-
+    // console.log(graph[4][5], '00')
     for (var i = 0; i < graph.length; i++) {
       let line = ''
       for (var j = 0; j < graph[i].length; j++) {

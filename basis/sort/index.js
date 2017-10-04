@@ -31,6 +31,6 @@ var param = common.randomNumber(6, 10, 100)
 // common.isSort(res5, false)
 // console.log(param)
 
-var arr = heapifyIndex.heapify([1,2,3,4])
+var arr = heapify0.heapify([1,2,3,4])
 console.log(arr)
 

@@ -2,21 +2,21 @@
  * 寻找路径
  */
 module.exports = class Edge{
-  constructor(a, b, weight){
-    this.a = a
-    this.b = b
+  constructor(v, w, weight){
+    this.v = v
+    this.w = w
     this.weight = weight
   }
   v(){
-    return this.a
+    return this.v
   }
   w(){
-    return this.b
+    return this.w
   }
   wt(){
     return this.weight
   }
   other(x){
-    return x === this.a ? this.b : this.a
+    return x === this.v ? this.w : this.v
   }
 }
