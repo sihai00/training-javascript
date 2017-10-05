@@ -9,7 +9,7 @@ module.exports = function(graph, filename){
   if (+first[0] === graph.n) {
     for (let i = 1; i < data.length; i++) {
       let line = data[i].split(' ')
-      graph.addEdge(line[0], line[1], parseFloat(line[2]))
+      graph.addEdge(parseInt(line[0]), parseInt(line[1]), parseFloat(line[2]))
     }
   }
   return graph

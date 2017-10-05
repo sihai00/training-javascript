@@ -4,8 +4,11 @@ const ReadGraph = require('./ReadGraph')
 const Component = require('./Component')
 const Path = require('./Path')
 const ShortestPath = require('./ShortestPath')
+const LazyPrimMST = require('./LazyPrimMST')
 
-var graph = ReadGraph(new DenseGraph.DenseGraph(8, false), 'test3.txt').show()
+var graph = ReadGraph(new DenseGraph.DenseGraph(8, false), 'testG1.txt')
+var prim = new LazyPrimMST(graph).show()
+
 // const res = new Component(graph)
 // console.dir(graph, {depth: null})
 
