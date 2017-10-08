@@ -63,7 +63,7 @@ exports.DenseGraph = class DenseGraph{
     return this.next()
   }
   next(){
-    let len = this.graph[this.v].length
+    let len = this.graph[this.v] ? this.graph[this.v].length : 0
     for (this.index += 1; this.index < len; this.index++) {
       let data = this.graph[this.v][this.index]
       return data ? data : null
@@ -72,7 +72,7 @@ exports.DenseGraph = class DenseGraph{
     return null
   }
   end(){
-    return this.index >= this.graph[this.v].length
+    return this.index >= (this.graph[this.v] ? this.graph[this.v].length : 0)
   }
 }
 
