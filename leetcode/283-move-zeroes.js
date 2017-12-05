@@ -4,7 +4,9 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var moveZeroes = function(nums) {
+  // [0, k)内为目标值
   var k = 0
+  // 交换元素的中间值
   var tem = 0
 
   for(var i = 0; i < nums.length; i++){
