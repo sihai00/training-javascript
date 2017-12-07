@@ -31,5 +31,6 @@
 | 36 | Valid Sudoku | [原文](https://leetcode.com/problems/valid-sudoku/description/) | [解答](./36-valid-sudoku.js) | medium |
 | 38 | Count and Say | [原文](https://leetcode.com/problems/count-and-say/description/) | [解答](./38-count-and-say.js) | easy |
 | 38 | Sort Colors | [原文](https://leetcode.com/problems/sort-colors/description/) | [解答](./80-sort-colors.js) | easy |
-| 80 | Remove Duplicates from Sorted Array II | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [解答](./80-remove-duplicates-from-sorted-array-ii.js) | easy |
+| 80 | Remove Duplicates from Sorted Array II | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [解答](./80-remove-duplicates-from-sorted-array-ii.js) | medium |
+| 88 | Merge Sorted Array | [原文](https://leetcode.com/problems/merge-sorted-array/description/) | [解答](./88-merge-sorted-array.js) | easy classify |
 | 283 | move-zeroes | [原文](https://leetcode.com/problems/move-zeroes/description/) | [解答](./283-move-zeroes.js) | easy |
