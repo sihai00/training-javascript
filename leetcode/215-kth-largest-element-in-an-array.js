@@ -3,6 +3,8 @@
  * @param {number} k
  * @return {number}
  */
+
+// 三路快排思路
 var findKthLargest = function(nums, k) {
   if (nums.length <= 0) return 
   let arr = nums
@@ -40,3 +42,8 @@ var findKthLargest = function(nums, k) {
     len = arr.length
   }
 };
+
+var findKthLargest = function(nums, k) {
+  var sorted = nums.sort(function(a, b){ return b - a});
+  return nums[k - 1];
+}
