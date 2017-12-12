@@ -38,3 +38,4 @@
 | 215 | Kth Largest Element in an Array | [原文](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [解答](./215-kth-largest-element-in-an-array.js) | easy classify |
 | 283 | move-zeroes | [原文](https://leetcode.com/problems/move-zeroes/description/) | [解答](./283-move-zeroes.js) | easy |
 | 344 | Reverse String | [原文](https://leetcode.com/problems/reverse-string/description/) | [解答](./344-reverse-string.js) | easy |
+| 345 | Reverse Vowels of a String | [原文](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [解答](./345-reverse-vowels-of-a-string.js) | easy |
