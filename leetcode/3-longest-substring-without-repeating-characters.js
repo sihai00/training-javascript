@@ -4,7 +4,6 @@
  * @return {number}
  */
 
-// 滑动窗口
  var lengthOfLongestSubstring = function(s) {
   var l = 0, r = -1, res = 0, obj = {}
 
