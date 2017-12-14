@@ -1,7 +1,26 @@
 /**
+ * 寻找给定字符串中的最大不重复子字符串的最大值
  * @param {string} s
  * @return {number}
  */
+
+// 滑动窗口
+ var lengthOfLongestSubstring = function(s) {
+  var l = 0, r = -1, res = 0, obj = {}
+
+  while(l < s.length){
+    if (r + 1 < s.length && !obj[s[r+1]]) {
+      obj[s[++r]] = 1
+    }else{
+      obj[s[l++]] = 0
+    }
+
+    res = Math.max(res, r - l + 1)
+  }
+
+  return res
+};
+
 var lengthOfLongestSubstring = function(s) {
   var res = ''
   var dif = ''
@@ -19,3 +38,5 @@ var lengthOfLongestSubstring = function(s) {
 
   return Math.max(res.length, dif.length)
 };
+
+
