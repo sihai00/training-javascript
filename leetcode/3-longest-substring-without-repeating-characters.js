@@ -1,10 +1,10 @@
 /**
- * 寻找给定字符串中的最大不重复子字符串的最大值
+ * 寻找给定字符串中不重复子字符串的最大值
  * @param {string} s
  * @return {number}
  */
 
- var lengthOfLongestSubstring = function(s) {
+var lengthOfLongestSubstring = function(s) {
   var l = 0, r = -1, res = 0, obj = {}
 
   while(l < s.length){

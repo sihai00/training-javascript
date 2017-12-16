@@ -4,27 +4,40 @@
  * @return {number[]}
  */
 var findAnagrams = function(s, p) {
-  var l = 0, r = p.length - 1, res = [], tem = [], bol = true
+  var anagrams = [];
+  var hash = [];
 
-  while(l < s.length){
-    if (r + 1 > s.length) break
+  hash.length = 256;
 
-    tem = s.substring(l, r + 1)
-    for (var i = 0; i < p.length; i++) {
-      if (tem.indexOf(p[i]) === -1) {
-        bol = false
-        break
+  [...p].forEach(c => hash[c.charCodeAt(0)] = (hash[c.charCodeAt(0)] || 0) + 1)
+
+  var begin = 0, end = 0, count = p.length
+
+  while (end < s.length) {
+    let key = s.charCodeAt(end);
+
+    if (hash[key] > 0){
+      count--;
+    }
+
+    hash[key]--;
+    end++;
+
+    if (count == 0){
+      anagrams.push(begin);
+    }
+
+    if (end - begin == p.length) {
+      key = s.charCodeAt(begin);
+
+      if (hash[key] >= 0){
+        count++;
       }
-    }
 
-    if (bol) {
-      res.push(l)
+      hash[key]++;
+      begin++;
     }
-
-    l ++
-    r ++
-    bol = true
   }
 
-  return res
+ return anagrams;
 };
