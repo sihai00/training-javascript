@@ -1,43 +1,26 @@
 /**
+ * 寻找所有p在s中子元素的下标
  * @param {string} s
  * @param {string} p
  * @return {number[]}
  */
-var findAnagrams = function(s, p) {
-  var anagrams = [];
-  var hash = [];
-
-  hash.length = 256;
-
-  [...p].forEach(c => hash[c.charCodeAt(0)] = (hash[c.charCodeAt(0)] || 0) + 1)
-
-  var begin = 0, end = 0, count = p.length
-
-  while (end < s.length) {
-    let key = s.charCodeAt(end);
-
-    if (hash[key] > 0){
+function findAnagrams(s, p) {
+  const map = {}, res = [];
+  for (const val of p) {
+    map[val] ? map[val]++ : map[val] = 1;
+  }
+  let count = p.length;
+  for (let l = 0, r = 0; r < s.length; ) {
+    if (map[s[r++]]-- >= 1) {
       count--;
     }
-
-    hash[key]--;
-    end++;
-
-    if (count == 0){
-      anagrams.push(begin);
+    if (count === 0) {
+      res.push(l);
     }
-
-    if (end - begin == p.length) {
-      key = s.charCodeAt(begin);
-
-      if (hash[key] >= 0){
-        count++;
-      }
-
-      hash[key]++;
-      begin++;
+    if (r - l === p.length && map[s[l++]]++ >= 0) {
+      count++;
     }
   }
-
- return anagrams;
+  return res;
 };
+

@@ -4,5 +4,5 @@
  * @return {string}
  */
 var minWindow = function(s, t) {
-    
+  
 };
