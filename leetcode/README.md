@@ -31,7 +31,6 @@
 | 36 | Valid Sudoku | [原文](https://leetcode.com/problems/valid-sudoku/description/) | [解答](./36-valid-sudoku.js) | medium |
 | 38 | Count and Say | [原文](https://leetcode.com/problems/count-and-say/description/) | [解答](./38-count-and-say.js) | easy |
 | 75 | Sort Colors | [原文](https://leetcode.com/problems/sort-colors/description/) | [解答](./75-sort-colors.js) | easy |
-| 76 | Minimum Window Substring | [原文](https://leetcode.com/problems/minimum-window-substring/description/) | [解答](./76-minimum-window-substring.js) | easy |
 | 80 | Remove Duplicates from Sorted Array II | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [解答](./80-remove-duplicates-from-sorted-array-ii.js) | medium |
 | 88 | Merge Sorted Array | [原文](https://leetcode.com/problems/merge-sorted-array/description/) | [解答](./88-merge-sorted-array.js) | easy classify |
 | 125 | Valid Palindrome | [原文](https://leetcode.com/problems/valid-palindrome/description/) | [解答](./125-valid-palindrome.js) | easy |
@@ -41,4 +40,5 @@
 | 283 | move-zeroes | [原文](https://leetcode.com/problems/move-zeroes/description/) | [解答](./283-move-zeroes.js) | easy |
 | 344 | Reverse String | [原文](https://leetcode.com/problems/reverse-string/description/) | [解答](./344-reverse-string.js) | easy |
 | 345 | Reverse Vowels of a String | [原文](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [解答](./345-reverse-vowels-of-a-string.js) | easy |
+| 349 | Intersection of Two Arrays | [原文](https://leetcode.com/problems/intersection-of-two-arrays/description/) | [解答](./349-intersection-of-two-arrays.js) | easy |
 | 438 | Find All Anagrams in a String | [原文](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [解答](./438-find-all-anagrams-in-a-string.js) | easy |
