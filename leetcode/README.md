@@ -41,4 +41,5 @@
 | 344 | Reverse String | [原文](https://leetcode.com/problems/reverse-string/description/) | [解答](./344-reverse-string.js) | easy |
 | 345 | Reverse Vowels of a String | [原文](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [解答](./345-reverse-vowels-of-a-string.js) | easy |
 | 349 | Intersection of Two Arrays | [原文](https://leetcode.com/problems/intersection-of-two-arrays/description/) | [解答](./349-intersection-of-two-arrays.js) | easy |
+| 350 | Intersection of Two Arrays II | [原文](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/) | [解答](./350-intersection-of-two-arrays-ii.js) | easy |
 | 438 | Find All Anagrams in a String | [原文](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [解答](./438-find-all-anagrams-in-a-string.js) | easy |

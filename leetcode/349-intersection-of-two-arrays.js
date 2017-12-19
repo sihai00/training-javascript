@@ -1,4 +1,5 @@
 /**
+ * 求两个数组的交集，不重复
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number[]}
