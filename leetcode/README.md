@@ -37,6 +37,7 @@
 | 167 | Two Sum II - Input array is sorted | [原文](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [解答](./167-two-sum-ii-input-array-is-sorted.js) | easy classify |
 | 209 | Minimum Size Subarray Sum | [原文](https://leetcode.com/problems/minimum-size-subarray-sum/description/) | [解答](./209-minimum-size-subarray-sum.js) | medium classify |
 | 215 | Kth Largest Element in an Array | [原文](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [解答](./215-kth-largest-element-in-an-array.js) | easy |
+| 242 | Valid Anagram | [原文](https://leetcode.com/problems/valid-anagram/description/) | [解答](./242-valid-anagram.js) | easy |
 | 283 | move-zeroes | [原文](https://leetcode.com/problems/move-zeroes/description/) | [解答](./283-move-zeroes.js) | easy |
 | 344 | Reverse String | [原文](https://leetcode.com/problems/reverse-string/description/) | [解答](./344-reverse-string.js) | easy |
 | 345 | Reverse Vowels of a String | [原文](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [解答](./345-reverse-vowels-of-a-string.js) | easy |
