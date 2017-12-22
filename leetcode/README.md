@@ -40,6 +40,7 @@
 | 220 | Happy Number | [原文](https://leetcode.com/problems/happy-number/description/) | [解答](./220-happy-number.js) | easy |
 | 242 | Valid Anagram | [原文](https://leetcode.com/problems/valid-anagram/description/) | [解答](./242-valid-anagram.js) | easy |
 | 283 | move-zeroes | [原文](https://leetcode.com/problems/move-zeroes/description/) | [解答](./283-move-zeroes.js) | easy |
+| 290 | Word Pattern | [原文](https://leetcode.com/problems/word-pattern/description/) | [解答](./290-word-pattern.js) | easy |
 | 344 | Reverse String | [原文](https://leetcode.com/problems/reverse-string/description/) | [解答](./344-reverse-string.js) | easy |
 | 345 | Reverse Vowels of a String | [原文](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [解答](./345-reverse-vowels-of-a-string.js) | easy |
 | 349 | Intersection of Two Arrays | [原文](https://leetcode.com/problems/intersection-of-two-arrays/description/) | [解答](./349-intersection-of-two-arrays.js) | easy |
