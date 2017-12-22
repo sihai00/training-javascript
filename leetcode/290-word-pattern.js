@@ -25,3 +25,23 @@ var wordPattern = function(pattern, str) {
 
   return true
 };
+
+// more fast by other
+function wordPattern(pattern, str) {
+  const m = new Map();
+  const n = new Map();
+  const ss = str.split(' ');
+  const ps = pattern.split('');
+  if (ss.length != ps.length) return false;
+  for (let i = 0; i < ss.length; i++) {
+    if (m.has(ss[i])) {
+      if (m.get(ss[i]) != ps[i]) return false;
+    } else if (n.has(ps[i])) {
+      if (n.get(ps[i]) != ss[i]) return false;
+    } else { 
+      m.set(ss[i], ps[i]);
+      n.set(ps[i], ss[i]);
+    }
+  }
+  return true;
+};
