@@ -33,6 +33,3 @@ var threeSum = function(nums) {
   return result
 };
 
-var threeSum = function(nums) {
-  
-};
