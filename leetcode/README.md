@@ -17,6 +17,7 @@
 | 15 | 3Sum | [原文](https://leetcode.com/problems/3sum/description/) | [解答](./15-3sum.js) | medium |
 | 16 | 3Sum Closest | [原文](https://leetcode.com/problems/3sum-closest/description/) | [解答](./16-3sum-closest.js) | medium |
 | 17 | Letter Combinations of a Phone Number | [原文](https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/) | [解答](./17-letter-combinations-of-a-phone-number.js) | medium |
+| 18 | 4Sum | [原文](https://leetcode.com/problems/4sum/description/) | [解答](./18-4sum.js) | medium |
 | 19 | Remove Nth Node From End of List | [原文](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | [解答](./19-remove-nth-node-from-end-of-list.js) | medium |
 | 20 | Valid Parentheses | [原文](https://leetcode.com/problems/valid-parentheses/tabs/description) | [解答](./20-valid-parentheses.js) | easy |
 | 21 | Merge Two Sorted Lists | [原文](https://leetcode.com/problems/merge-two-sorted-lists/description/) | [解答](./21-merge-two-sorted-lists.js) | easy |
@@ -48,3 +49,4 @@
 | 350 | Intersection of Two Arrays II | [原文](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/) | [解答](./350-intersection-of-two-arrays-ii.js) | easy |
 | 438 | Find All Anagrams in a String | [原文](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [解答](./438-find-all-anagrams-in-a-string.js) | easy |
 | 451 | Sort Characters By Frequency | [原文](https://leetcode.com/problems/sort-characters-by-frequency/description/) | [解答](./451-sort-characters-by-frequency.js) | easy |
+| 454 | 4Sum II | [原文](https://leetcode.com/problems/4sum-ii/description/) | [解答](./454-4sum-ii.js) | medium |
