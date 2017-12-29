@@ -20,9 +20,9 @@ var numberOfBoomerangs = function(points) {
       }
     }
 
-    Object.keys(map).forEach(v => {
+    map.forEach(v => {
       if (v > 1) {
-        res += map.get(v) * (map.get(v) - 1)
+        res += v * (v - 1)
       }
     })
   }
