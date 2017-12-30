@@ -22,6 +22,7 @@ var numberOfBoomerangs = function(points) {
 
     map.forEach(v => {
       if (v > 1) {
+        // 要求三元组，所以只取两次
         res += v * (v - 1)
       }
     })
