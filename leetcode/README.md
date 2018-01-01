@@ -37,12 +37,13 @@
 | 88 | Merge Sorted Array | [原文](https://leetcode.com/problems/merge-sorted-array/description/) | [解答](./88-merge-sorted-array.js) | easy classify |
 | 125 | Valid Palindrome | [原文](https://leetcode.com/problems/valid-palindrome/description/) | [解答](./125-valid-palindrome.js) | easy |
 | 167 | Two Sum II - Input array is sorted | [原文](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [解答](./167-two-sum-ii-input-array-is-sorted.js) | easy classify |
+| 202 | Happy Number | [原文](https://leetcode.com/problems/happy-number/description/) | [解答](./202-happy-number.js) | medium |
 | 205 | Isomorphic Strings | [原文](https://leetcode.com/problems/isomorphic-strings/description/) | [解答](./205-isomorphic-strings.js) | medium |
 | 209 | Minimum Size Subarray Sum | [原文](https://leetcode.com/problems/minimum-size-subarray-sum/description/) | [解答](./209-minimum-size-subarray-sum.js) | medium |
 | 215 | Kth Largest Element in an Array | [原文](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | [解答](./215-kth-largest-element-in-an-array.js) | easy |
 | 217 | Contains Duplicate | [原文](https://leetcode.com/problems/contains-duplicate/description/) | [解答](./217-contains-duplicate.js) | easy |
 | 219 | Contains Duplicate II | [原文](https://leetcode.com/problems/contains-duplicate-ii/description/) | [解答](./219-contains-duplicate-ii.js) | easy |
-| 220 | Happy Number | [原文](https://leetcode.com/problems/happy-number/description/) | [解答](./220-happy-number.js) | easy |
+| 220 | Contains Duplicate III | [原文](https://leetcode.com/problems/contains-duplicate-iii/description/) | [解答](./220-contains-duplicate-iii.js) | easy |
 | 242 | Valid Anagram | [原文](https://leetcode.com/problems/valid-anagram/description/) | [解答](./242-valid-anagram.js) | easy |
 | 283 | move-zeroes | [原文](https://leetcode.com/problems/move-zeroes/description/) | [解答](./283-move-zeroes.js) | easy |
 | 290 | Word Pattern | [原文](https://leetcode.com/problems/word-pattern/description/) | [解答](./290-word-pattern.js) | easy |
