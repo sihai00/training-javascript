@@ -5,15 +5,14 @@
  * @param {number} t
  * @return {boolean}
  */
+
+// time out
 var containsNearbyAlmostDuplicate = function(nums, k, t) {
   var set = new Set()
-  var max = 0
 
   for (var i = 0; i < nums.length; i++) {
-    set.forEach(v => {
-      if (v <= nums[i] + t && v > max) max = v
-    })
-    if (max != null && max >= nums[i] - t) return true
+    var min = [...set].sort((a, b) => a - b).filter(v => v >= nums[i] - t)[0]
+    if (min != null && min <= nums[i] + t) return true
 
     set.add(nums[i])
     if (set.size === k + 1) {
@@ -22,4 +21,12 @@ var containsNearbyAlmostDuplicate = function(nums, k, t) {
   }
 
   return false
+};
+
+var containsNearbyAlmostDuplicate = function(nums, k, t) {
+  var len = nums.length;
+  for (var i = 0; i < len; i++)
+    for (var j = i + 1; j <= Math.min(i + k, len - 1); j++)
+      if (Math.abs(nums[i] - nums[j]) <= t) return true;
+  return false;
 };
