@@ -1,4 +1,5 @@
 /**
+ * 反转链表
  * Definition for singly-linked list.
  * function ListNode(val) {
  *     this.val = val;
@@ -22,3 +23,4 @@ var reverseList = function(head) {
 
   return pre
 };
+
