@@ -6,31 +6,30 @@
  * }
  */
 /**
+ * 给出一个链表以及一个数x，讲链表重新整理，使得小于x的元素在前，大于等于x的元素在后
  * @param {ListNode} head
  * @param {number} x
  * @return {ListNode}
  */
 var partition = function(head, x) {
-  if (!head.val) return null
-  var cur = new ListNode(0)
-  cur.next = head
-  var arr = []
-  var pre = null
+  if (!head) return head
+  var left = new ListNode(0), right = new ListNode(0)
+  var leftIndex = left, rightIndex = right
 
-  while(cur.next !== null){
-    pre = cur.next
-
-    if (pre.val > x) {
-      arr.push(pre)
+  // 把小于x和大于等于x分为两个链表存储，最后再合并链表即可
+  while(head !== null) {
+    if (head.val < x) {
+      left.next = head
+      left = left.next
     }else{
-      arr.unshift(pre)
+      right.next = head
+      right = right.next
     }
+
+    head = head.next
   }
 
-  var res = arr[0]
-  for (var i = 0; i < arr.length; i++) {
-    arr[i].next = arr[i + 1] ? arr[i + 1] : null
-  }
-
-  return res
+  right.next = null
+  left.next = rightIndex.next
+  return leftIndex.next
 };
