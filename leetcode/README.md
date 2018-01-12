@@ -34,6 +34,7 @@
 | 49 | Group Anagrams | [原文](https://leetcode.com/problems/group-anagrams/description/) | [解答](./49-group-anagrams.js) | medium |
 | 75 | Sort Colors | [原文](https://leetcode.com/problems/sort-colors/description/) | [解答](./75-sort-colors.js) | easy |
 | 80 | Remove Duplicates from Sorted Array II | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | [解答](./80-remove-duplicates-from-sorted-array-ii.js) | medium |
+| 82 | Remove Duplicates from Sorted List II | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) | [解答](./82-remove-duplicates-from-sorted-list-ii.js) | medium |
 | 83 | Remove Duplicates from Sorted List | [原文](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | [解答](./83-remove-duplicates-from-sorted-list.js) | medium |
 | 86 | Partition List | [原文](https://leetcode.com/problems/partition-list/description/) | [解答](./86-partition-list.js) | medium |
 | 88 | Merge Sorted Array | [原文](https://leetcode.com/problems/merge-sorted-array/description/) | [解答](./88-merge-sorted-array.js) | easy classify |
