@@ -41,3 +41,22 @@ var swapPairs = function(head) {
 
   return arr[0]
 };
+
+var swapPairs = function(head) {
+  var p = new ListNode(0), pIndex = p
+  p.next = head
+
+  while(p.next && p.next.next){
+    var node1 = p.next,
+        node2 = node1.next
+        next = node2.next
+
+    node2.next = node1
+    node1.next = next
+    p.next = node2
+
+    p = node1
+  }
+
+  return pIndex.next
+};
