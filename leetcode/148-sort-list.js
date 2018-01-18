@@ -41,8 +41,6 @@ function merge(h1, h2){
 
     p = p.next
   }
-
   p.next = h1 ? h1 : h2
-
   return fakeHead.next
 }
