@@ -3,6 +3,46 @@
  * @param {string} s
  * @return {boolean}
  */
+
+// 运用栈
+var isValid = function(s) {
+  var arr = []
+
+  for (var i = 0; i < s.length; i++) {
+    // 先把左括号推入栈
+    if (s[i] == '(' || s[i] == '{' || s[i] == '[') {
+      arr.push(s[i])
+    }else{
+      // 当匹配右括号时，如果栈为空则返回false
+      if (arr.length === 0) return false
+
+      var top = arr.pop()
+      var match = ''
+      switch(s[i]){
+        case ')':
+          match = '('
+          break
+        case '}':
+          match = '{'
+          break
+        case ']':
+          match = '['
+          break
+        default:
+          break
+      }
+      // 把栈顶元素与配对的右括号相比较
+      if (top !== match) return false
+    }
+  }
+  
+  if (arr.length !== 0) {
+    return false
+  }else{
+    return true
+  }
+};
+
 var isValid = function(s) {
   var len = s.length
   var result = []
