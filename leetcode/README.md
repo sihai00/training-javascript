@@ -44,6 +44,7 @@
 | 143 | Reorder List | [原文](https://leetcode.com/problems/reorder-list/description/) | [解答](./143-reorder-list.js) | medium classify |
 | 147 | Insertion Sort List | [原文](https://leetcode.com/problems/insertion-sort-list/description/) | [解答](./147-insertion-sort-list.js) | medium |
 | 148 | Sort List | [原文](https://leetcode.com/problems/sort-list/description/) | [解答](./148-sort-list.js) | medium |
+| 150 | Evaluate Reverse Polish Notation | [原文](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | [解答](./150-evaluate-reverse-polish-notation.js) | medium |
 | 167 | Two Sum II - Input array is sorted | [原文](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | [解答](./167-two-sum-ii-input-array-is-sorted.js) | easy classify |
 | 202 | Happy Number | [原文](https://leetcode.com/problems/happy-number/description/) | [解答](./202-happy-number.js) | medium |
 | 203 | Remove Linked List Elements | [原文](https://leetcode.com/problems/remove-linked-list-elements/description/) | [解答](./203-remove-linked-list-elements.js) | easy |
