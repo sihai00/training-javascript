@@ -43,6 +43,7 @@
 | 92 | Reverse Linked List II | [原文](https://leetcode.com/problems/reverse-linked-list-ii/description/) | [解答](./92-reverse-linked-list-ii.js) | medium |
 | 125 | Valid Palindrome | [原文](https://leetcode.com/problems/valid-palindrome/description/) | [解答](./125-valid-palindrome.js) | easy |
 | 143 | Reorder List | [原文](https://leetcode.com/problems/reorder-list/description/) | [解答](./143-reorder-list.js) | medium classify |
+| 144 | Binary Tree Preorder Traversal | [原文](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [解答](./144-binary-tree-preorder-traversal.js) | medium |
 | 147 | Insertion Sort List | [原文](https://leetcode.com/problems/insertion-sort-list/description/) | [解答](./147-insertion-sort-list.js) | medium |
 | 148 | Sort List | [原文](https://leetcode.com/problems/sort-list/description/) | [解答](./148-sort-list.js) | medium |
 | 150 | Evaluate Reverse Polish Notation | [原文](https://leetcode.com/problems/evaluate-reverse-polish-notation/description/) | [解答](./150-evaluate-reverse-polish-notation.js) | medium |
