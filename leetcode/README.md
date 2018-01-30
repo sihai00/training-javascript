@@ -69,6 +69,7 @@
 | 345 | Reverse Vowels of a String | [原文](https://leetcode.com/problems/reverse-vowels-of-a-string/description/) | [解答](./src/345-reverse-vowels-of-a-string.js) | easy |
 | 349 | Intersection of Two Arrays | [原文](https://leetcode.com/problems/intersection-of-two-arrays/description/) | [解答](./src/349-intersection-of-two-arrays.js) | easy |
 | 350 | Intersection of Two Arrays II | [原文](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/) | [解答](./src/350-intersection-of-two-arrays-ii.js) | easy |
+| 341 | Flatten Nested List Iterator | [原文](https://leetcode.com/problems/flatten-nested-list-iterator/description/) | [解答](./src/341-flatten-nested-list-iterator.js) | easy |
 | 438 | Find All Anagrams in a String | [原文](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/) | [解答](./src/438-find-all-anagrams-in-a-string.js) | easy |
 | 445 | Add Two Numbers II | [原文](https://leetcode.com/problems/add-two-numbers-ii/description/) | [解答](./src/445-add-two-numbers-ii.js) | easy |
 | 447 | Number of Boomerangs | [原文](https://leetcode.com/problems/number-of-boomerangs/description/) | [解答](./src/447-number-of-boomerangs.js) | easy |
