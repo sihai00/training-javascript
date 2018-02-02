@@ -7,6 +7,7 @@
  */
 /**
  * 实现广度优先遍历
+ * 思路：使用对象结构，level表示层级以及结果数组对应的下标，例如arr[0]就是第一层以此类推
  * @param {TreeNode} root
  * @return {number[][]}
  */
@@ -31,3 +32,4 @@ var levelOrder = function(root) {
 
   return res
 };
+
