@@ -66,6 +66,7 @@
 | 237 | Delete Node in a Linked List | [原文](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | [解答](./src/237-delete-node-in-a-linked-list.js) | easy |
 | 242 | Valid Anagram | [原文](https://leetcode.com/problems/valid-anagram/description/) | [解答](./src/242-valid-anagram.js) | easy |
 | 283 | move-zeroes | [原文](https://leetcode.com/problems/move-zeroes/description/) | [解答](./src/283-move-zeroes.js) | easy |
+| 279 | Perfect Squares | [原文](https://leetcode.com/problems/perfect-squares/description/) | [解答](./src/279-perfect-squares.js) | easy |
 | 290 | Word Pattern | [原文](https://leetcode.com/problems/word-pattern/description/) | [解答](./src/290-word-pattern.js) | easy |
 | 328 | Odd Even Linked List | [原文](https://leetcode.com/problems/odd-even-linked-list/description/) | [解答](./src/328-odd-even-linked-list.js) | medium |
 | 344 | Reverse String | [原文](https://leetcode.com/problems/reverse-string/description/) | [解答](./src/344-reverse-string.js) | easy |
