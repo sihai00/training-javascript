@@ -45,7 +45,9 @@
 | 94 | Binary Tree Inorder Traversal | [原文](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [解答](./src/94-binary-tree-inorder-traversal.js) | medium |
 | 102 | Binary Tree Level Order Traversal | [原文](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | [解答](./src/102-binary-tree-level-order-traversal.js) | medium |
 | 103 | Binary Tree Zigzag Level Order Traversal | [原文](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | [解答](./src/103-binary-tree-zigzag-level-order-traversal.js) | medium |
-| 107 | Binary Tree Level Order Traversal II | [原文](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [解答](./src/107-binary-tree-level-order-traversal-ii.js) | easy |
+| 104 | Maximum Depth of Binary Tree | [原文](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | [解答](./src/104-maximum-depth-of-binary-tree.js) | easy |
+| 107 | Binary Tree Level Order Traversal II | [原文](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description) | [解答](./src/107-binary-tree-level-order-traversal-ii.js) | easy |
+| 111 | Minimum Depth of Binary Tree | [原文](https://leetcode.com/problems/minimum-depth-of-binary-tree/description) | [解答](./src/111-minimum-depth-of-binary-tree.js) | easy |
 | 125 | Valid Palindrome | [原文](https://leetcode.com/problems/valid-palindrome/description/) | [解答](./src/125-valid-palindrome.js) | easy |
 | 143 | Reorder List | [原文](https://leetcode.com/problems/reorder-list/description/) | [解答](./src/143-reorder-list.js) | medium classify |
 | 144 | Binary Tree Preorder Traversal | [原文](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [解答](./src/144-binary-tree-preorder-traversal.js) | medium |

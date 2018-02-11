@@ -7,12 +7,13 @@
  */
 /**
  * 有k个有序数组，将他们归并为一个有序数组
+ * 思路：分治思想，先2分到一个节点，然后递归合并
  * @param {ListNode[]} lists
  * @return {ListNode}
  */
- var mergeKLists = function(lists) {
-    return cutList(lists, 0, lists.length-1)
- }
+var mergeKLists = function(lists) {
+  return cutList(lists, 0, lists.length-1)
+}
 
 var cutList = function( lists, start, end){
   if(start == end) return lists[start]
@@ -23,7 +24,7 @@ var cutList = function( lists, start, end){
     let listB = cutList(lists, middle+1, end)
 
     return merge(listA, listB)
-  }else{ 
+  }else{
     return null
   }
 }
