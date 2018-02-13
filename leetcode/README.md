@@ -65,6 +65,7 @@
 | 217 | Contains Duplicate | [原文](https://leetcode.com/problems/contains-duplicate/description/) | [解答](./src/217-contains-duplicate.js) | easy |
 | 219 | Contains Duplicate II | [原文](https://leetcode.com/problems/contains-duplicate-ii/description/) | [解答](./src/219-contains-duplicate-ii.js) | easy |
 | 220 | Contains Duplicate III | [原文](https://leetcode.com/problems/contains-duplicate-iii/description/) | [解答](./src/220-contains-duplicate-iii.js) | easy |
+| 226 | Invert Binary Tree | [原文](https://leetcode.com/problems/invert-binary-tree/description/) | [解答](./src/226-invert-binary-tree.js) | easy |
 | 234 | Palindrome Linked List | [原文](https://leetcode.com/problems/palindrome-linked-list/description/) | [解答](./src/234-palindrome-linked-list.js) | easy |
 | 237 | Delete Node in a Linked List | [原文](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | [解答](./src/237-delete-node-in-a-linked-list.js) | easy |
 | 242 | Valid Anagram | [原文](https://leetcode.com/problems/valid-anagram/description/) | [解答](./src/242-valid-anagram.js) | easy |
