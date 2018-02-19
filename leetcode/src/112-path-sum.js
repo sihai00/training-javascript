@@ -16,10 +16,17 @@
 var hasPathSum = function(root, sum) {
   if (!root) return false
 
-  var left = sum - root.left
-  var right = sum - root.right
+  var sum = sum - root.val, left = false, right = false
+  if (!root.left && !root.right) {
+    if (sum === 0) {
+      return true
+    }else{
+      return false
+    }
+  }
+  
+  if (root.left) left = hasPathSum(root.left, sum)
+  if (root.right) right = hasPathSum(root.right, sum)
 
-  if (left === 0 || right === 0) return true
-
-  return hasPathSum(root.left, left) || hasPathSum(root.right, right)
+  return left || right
 };
