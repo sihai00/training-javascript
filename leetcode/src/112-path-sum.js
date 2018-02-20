@@ -16,17 +16,11 @@
 var hasPathSum = function(root, sum) {
   if (!root) return false
 
-  var sum = sum - root.val, left = false, right = false
+  var sum = sum - root.val
+  // 题意：从根到叶子
   if (!root.left && !root.right) {
-    if (sum === 0) {
-      return true
-    }else{
-      return false
-    }
+    return sum === 0
   }
-  
-  if (root.left) left = hasPathSum(root.left, sum)
-  if (root.right) right = hasPathSum(root.right, sum)
 
-  return left || right
+  return hasPathSum(root.left, sum) || hasPathSum(root.right, sum)
 };
