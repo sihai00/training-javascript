@@ -74,6 +74,7 @@
 | 234 | Palindrome Linked List | [原文](https://leetcode.com/problems/palindrome-linked-list/description/) | [解答](./src/234-palindrome-linked-list.js) | easy |
 | 237 | Delete Node in a Linked List | [原文](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | [解答](./src/237-delete-node-in-a-linked-list.js) | easy |
 | 242 | Valid Anagram | [原文](https://leetcode.com/problems/valid-anagram/description/) | [解答](./src/242-valid-anagram.js) | easy |
+| 257 | Binary Tree Paths | [原文](https://leetcode.com/problems/binary-tree-paths/description/) | [解答](./src/257-binary-tree-paths.js) | easy |
 | 283 | move-zeroes | [原文](https://leetcode.com/problems/move-zeroes/description/) | [解答](./src/283-move-zeroes.js) | easy |
 | 279 | Perfect Squares | [原文](https://leetcode.com/problems/perfect-squares/description/) | [解答](./src/279-perfect-squares.js) | easy |
 | 290 | Word Pattern | [原文](https://leetcode.com/problems/word-pattern/description/) | [解答](./src/290-word-pattern.js) | easy |
