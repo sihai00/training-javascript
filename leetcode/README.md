@@ -54,7 +54,7 @@
 | 112 | Path Sum | [原文](https://leetcode.com/problems/path-sum/description) | [解答](./src/112-path-sum.js) | easy |
 | 113 | Path Sum II | [原文](https://leetcode.com/problems/path-sum-ii/description) | [解答](./src/113-path-sum-ii.js) | medium |
 | 125 | Valid Palindrome | [原文](https://leetcode.com/problems/valid-palindrome/description/) | [解答](./src/125-valid-palindrome.js) | easy |
-| 129 | Sum Root to Leaf Numbers | [原文](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/) | [解答](./src/129-sum-root-to-leaf-numbers.js) | easy |
+| 129 | Sum Root to Leaf Numbers | [原文](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/) | [解答](./src/129-sum-root-to-leaf-numbers.js) | medium |
 | 143 | Reorder List | [原文](https://leetcode.com/problems/reorder-list/description/) | [解答](./src/143-reorder-list.js) | medium classify |
 | 144 | Binary Tree Preorder Traversal | [原文](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | [解答](./src/144-binary-tree-preorder-traversal.js) | medium |
 | 145 | Binary Tree Postorder Traversal | [原文](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | [解答](./src/145-binary-tree-postorder-traversal.js) | hard |
