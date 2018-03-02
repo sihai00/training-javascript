@@ -43,6 +43,7 @@
 | 88 | Merge Sorted Array | [原文](https://leetcode.com/problems/merge-sorted-array/description/) | [解答](./src/88-merge-sorted-array.js) | easy classify |
 | 92 | Reverse Linked List II | [原文](https://leetcode.com/problems/reverse-linked-list-ii/description/) | [解答](./src/92-reverse-linked-list-ii.js) | medium |
 | 94 | Binary Tree Inorder Traversal | [原文](https://leetcode.com/problems/binary-tree-inorder-traversal/description/) | [解答](./src/94-binary-tree-inorder-traversal.js) | medium |
+| 98 | Validate Binary Search Tree | [原文](https://leetcode.com/problems/validate-binary-search-tree/description/) | [解答](./src/98-validate-binary-search-tree.js) | medium |
 | 100 | Same Tree | [原文](https://leetcode.com/problems/same-tree/description/) | [解答](./src/100-same-tree.js) | easy |
 | 101 | Symmetric Tree | [原文](https://leetcode.com/problems/symmetric-tree/description/) | [解答](./src/101-symmetric-tree.js) | easy |
 | 102 | Binary Tree Level Order Traversal | [原文](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | [解答](./src/102-binary-tree-level-order-traversal.js) | medium |
