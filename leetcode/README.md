@@ -75,6 +75,7 @@
 | 220 | Contains Duplicate III | [原文](https://leetcode.com/problems/contains-duplicate-iii/description/) | [解答](./src/220-contains-duplicate-iii.js) | easy |
 | 222 | Count Complete Tree Nodes | [原文](https://leetcode.com/problems/count-complete-tree-nodes/description/) | [解答](./src/222-count-complete-tree-nodes.js) | easy |
 | 226 | Invert Binary Tree | [原文](https://leetcode.com/problems/invert-binary-tree/description/) | [解答](./src/226-invert-binary-tree.js) | easy |
+| 230 | Kth Smallest Element in a BST | [原文](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | [解答](./src/230-kth-smallest-element-in-a-bst.js) | easy |
 | 234 | Palindrome Linked List | [原文](https://leetcode.com/problems/palindrome-linked-list/description/) | [解答](./src/234-palindrome-linked-list.js) | easy |
 | 235 | Lowest Common Ancestor of a Binary Search Tree | [原文](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | [解答](./src/235-lowest-common-ancestor-of-a-binary-search-tree.js) | easy |
 | 237 | Delete Node in a Linked List | [原文](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | [解答](./src/237-delete-node-in-a-linked-list.js) | easy |
