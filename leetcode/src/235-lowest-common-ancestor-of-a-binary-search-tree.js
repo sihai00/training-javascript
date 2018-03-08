@@ -19,7 +19,7 @@ var lowestCommonAncestor = function(root, p, q) {
   // 当root比q、p大时，说明目标节点在右子树
   if (root.val < p.val && root.val < q.val) return lowestCommonAncestor(root.right, p, q)
 
-  // 当root比q、p大时，说明目标节点在右子树
+  // 当root比q、p大时，说明目标节点在左子树
   if (root.val > p.val && root.val > q.val) return lowestCommonAncestor(root.left, p, q)
 
   // 否则证明当前节点就是目标节点

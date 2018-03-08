@@ -78,6 +78,7 @@
 | 230 | Kth Smallest Element in a BST | [原文](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | [解答](./src/230-kth-smallest-element-in-a-bst.js) | easy |
 | 234 | Palindrome Linked List | [原文](https://leetcode.com/problems/palindrome-linked-list/description/) | [解答](./src/234-palindrome-linked-list.js) | easy |
 | 235 | Lowest Common Ancestor of a Binary Search Tree | [原文](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | [解答](./src/235-lowest-common-ancestor-of-a-binary-search-tree.js) | easy |
+| 236 | Lowest Common Ancestor of a Binary Tree | [原文](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | [解答](./src/236-lowest-common-ancestor-of-a-binary-tree.js) | medium |
 | 237 | Delete Node in a Linked List | [原文](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | [解答](./src/237-delete-node-in-a-linked-list.js) | easy |
 | 242 | Valid Anagram | [原文](https://leetcode.com/problems/valid-anagram/description/) | [解答](./src/242-valid-anagram.js) | easy |
 | 257 | Binary Tree Paths | [原文](https://leetcode.com/problems/binary-tree-paths/description/) | [解答](./src/257-binary-tree-paths.js) | easy |
