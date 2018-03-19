@@ -36,3 +36,40 @@ var letterCombinations = function(digits) {
 
   return result
 };
+
+var letterCombinations = function(digits) {
+  let res = []
+  var letterMap = {
+    '2': 'abc',
+    '3': 'def',
+    '4': 'ghi',
+    '5': 'jkl',
+    '6': 'mno',
+    '7': 'pqrs',
+    '8': 'tuv',
+    '9': 'wxyz'
+  }
+
+  if (!digits) return res
+
+  var findCombination = function(digits, index, s) {
+    if (digits.length === index) {
+      res.push(s)
+      return
+    }
+
+    let c = digits[index]
+    let letters = letterMap[c]
+
+    if (c >= '0' && c <= '9' && c !== '1') {
+      for (var i = 0; i < letters.length; i++) {
+        findCombination(digits, index + 1, s + letters[i])
+      }
+    }
+    return
+  };
+
+  findCombination(digits, 0, '')
+
+  return res
+};
