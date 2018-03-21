@@ -4,5 +4,5 @@
  * @return {string[]}
  */
 var restoreIpAddresses = function(s) {
-  
+   
 };
