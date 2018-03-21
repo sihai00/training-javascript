@@ -4,5 +4,25 @@
  * @return {string[]}
  */
 var restoreIpAddresses = function(s) {
-   
+  let res = []
+  let index = 1
+
+  let findConbination = function(arr, index, s){
+    if (index > 4) {
+      if (!s) res.push(arr)
+      return
+    }
+
+    for (var i = 1; i <= 3; i++) {
+      let v = s.substring(0, i)
+      arr.push(v)
+      findConbination(arr, index + 1, s.slice(i))
+    }
+
+    return
+  }
+
+  findConbination([],index, s)
+
+  return res
 };
