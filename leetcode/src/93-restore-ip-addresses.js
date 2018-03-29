@@ -4,25 +4,26 @@
  * @return {string[]}
  */
 var restoreIpAddresses = function(s) {
-  let res = []
-  let index = 1
+  let arr = []
 
-  let findConbination = function(arr, index, s){
-    if (index > 4) {
-      if (!s) res.push(arr)
-      return
+  // ip: s
+  // idx: 循环次数
+  // restored: 单个ip结果
+  // count: 点数
+  let restoreIp = function(ip, idx, restored, count){
+    if (count > 4) return
+    if (count === 4 && idx === ip.length) arr.push(restored)
+
+    for (var i = 1; i < 4; i++) {
+      if (idx + i > ip.length) break
+
+      let s = ip.substring(idx, idx + i)
+      if ((s[0] === '0' && s.length > 1) || (i == 3 && parseInt(s) >= 256)) continue;
+      restoreIp(ip, idx + i, restored + s + (count == 3 ? '' : '.'), count + 1)
     }
-
-    for (var i = 1; i <= 3; i++) {
-      let v = s.substring(0, i)
-      arr.push(v)
-      findConbination(arr, index + 1, s.slice(i))
-    }
-
-    return
   }
+  
+  restoreIp(s, 0, '', 0)
 
-  findConbination([],index, s)
-
-  return res
+  return arr
 };

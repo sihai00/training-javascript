@@ -7,37 +7,6 @@
  * @return {string[]}
  */
 var letterCombinations = function(digits) {
-  if (+digits < 0) return []
-  var param = `${digits}`
-  var sign = {
-    '2': ['a', 'b', 'c'],
-    '3': ['d', 'e' ,'f'],
-    '4': ['g', 'h' ,'i'],
-    '5': ['j', 'k' ,'l'],
-    '6': ['m', 'n' ,'o'],
-    '7': ['p', 'q' ,'r', 's'],
-    '8': ['t', 'u' ,'v'],
-    '9': ['w', 'x' ,'y', 'z']
-  }
-  var result = []
-  var len = 0
-
-  for (var i = 0; i < param.length; i++) {
-    if (len === 0) {
-      result = [...result, ...sign[param[i]]]
-    }else{
-      for (var j = 0; j < len; j++) {
-        var l = result.shift()
-        result = [...result, ...sign[param[i]].map(v => l + v)]
-      }
-    }
-    len = result.length
-  }
-
-  return result
-};
-
-var letterCombinations = function(digits) {
   let res = []
   var letterMap = {
     '2': 'abc',
@@ -72,4 +41,35 @@ var letterCombinations = function(digits) {
   findCombination(digits, 0, '')
 
   return res
+};
+
+var letterCombinations = function(digits) {
+  if (+digits < 0) return []
+  var param = `${digits}`
+  var sign = {
+    '2': ['a', 'b', 'c'],
+    '3': ['d', 'e' ,'f'],
+    '4': ['g', 'h' ,'i'],
+    '5': ['j', 'k' ,'l'],
+    '6': ['m', 'n' ,'o'],
+    '7': ['p', 'q' ,'r', 's'],
+    '8': ['t', 'u' ,'v'],
+    '9': ['w', 'x' ,'y', 'z']
+  }
+  var result = []
+  var len = 0
+
+  for (var i = 0; i < param.length; i++) {
+    if (len === 0) {
+      result = [...result, ...sign[param[i]]]
+    }else{
+      for (var j = 0; j < len; j++) {
+        var l = result.shift()
+        result = [...result, ...sign[param[i]].map(v => l + v)]
+      }
+    }
+    len = result.length
+  }
+
+  return result
 };
